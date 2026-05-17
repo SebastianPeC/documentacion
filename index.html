@@ -1,823 +1,1087 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmniSynch — Documentación del Sistema ERP</title>
+    <title>Plan de Marketing para Redes Sociales — Almacén Refri Servicios Cartagena S.A.S.</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Inter',sans-serif;background:#030303;color:#fff}
-        ::selection{background:#00ffc4;color:#000}
-        ::-webkit-scrollbar{width:6px}
-        ::-webkit-scrollbar-track{background:#080808}
-        ::-webkit-scrollbar-thumb{background:#333;border-radius:3px}
-        ::-webkit-scrollbar-thumb:hover{background:#555}
-        .font-mono{font-family:'JetBrains Mono',monospace}
-        .text-gradient{background:linear-gradient(to right,#00ffc4,#047857);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .glow-green{box-shadow:0 0 50px rgba(0,255,196,0.08)}
-        .grid-bg{background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:4rem 4rem}
-        .sidebar-link{transition:all .2s;border-left:2px solid transparent}
-        .sidebar-link:hover{background:rgba(255,255,255,0.03);border-left-color:rgba(0,255,196,0.3);color:#fff}
-        .sidebar-link.active{background:rgba(0,255,196,0.05);border-left-color:#00ffc4;color:#00ffc4}
-        .code-block{background:#0a0a0a;border:1px solid rgba(255,255,255,0.08);border-radius:12px;overflow:hidden}
-        .code-header{background:#111;border-bottom:1px solid rgba(255,255,255,0.08);padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
-        .code-content{padding:20px;overflow-x:auto;font-size:13px;line-height:1.7}
-        .code-content .kw{color:#c792ea}.code-content .str{color:#c3e88d}.code-content .fn{color:#82aaff}
-        .code-content .cm{color:#546e7a}.code-content .num{color:#f78c6c}.code-content .op{color:#89ddff}
-        .code-content .prop{color:#ffcb6b}.code-content .var{color:#eeffff}.code-content .tag{color:#f07178}
-        .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03)}
-        .badge-green{border-color:rgba(0,255,196,0.2);color:#00ffc4;background:rgba(0,255,196,0.05)}
-        .badge-yellow{border-color:rgba(250,204,21,0.2);color:#facc15;background:rgba(250,204,21,0.05)}
-        .badge-blue{border-color:rgba(96,165,250,0.2);color:#60a5fa;background:rgba(96,165,250,0.05)}
-        .badge-purple{border-color:rgba(168,85,247,0.2);color:#a855f7;background:rgba(168,85,247,0.05)}
-        .badge-red{border-color:rgba(248,113,113,0.2);color:#f87171;background:rgba(248,113,113,0.05)}
-        .endpoint-method{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;padding:3px 10px;border-radius:6px}
-        .method-get{background:rgba(0,255,196,0.1);color:#00ffc4}
-        .method-post{background:rgba(96,165,250,0.1);color:#60a5fa}
-        .method-put{background:rgba(250,204,21,0.1);color:#facc15}
-        .method-delete{background:rgba(248,113,113,0.1);color:#f87171}
-        .api-card{background:#080808;border:1px solid rgba(255,255,255,0.06);border-radius:16px;transition:all .3s}
-        .api-card:hover{border-color:rgba(0,255,196,0.15)}
-        .section-card{background:#080808;border:1px solid rgba(255,255,255,0.06);border-radius:24px;padding:40px}
-        .feature-card{background:#080808;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:28px;transition:all .3s}
-        .feature-card:hover{border-color:rgba(0,255,196,0.15);transform:translateY(-2px)}
-        @keyframes slideInUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-        .animate-in{animation:slideInUp .6s ease-out forwards;opacity:0}
-        .tab-btn{padding:8px 20px;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:all .2s;border:1px solid transparent;background:transparent;color:#6b7280}
-        .tab-btn:hover{color:#fff;background:rgba(255,255,255,0.03)}
-        .tab-btn.active{color:#00ffc4;background:rgba(0,255,196,0.05);border-color:rgba(0,255,196,0.2)}
-        .tab-content{display:none}.tab-content.active{display:block}
-        .mobile-menu{display:none}
-        @media(max-width:1023px){
-            .sidebar{transform:translateX(-100%);position:fixed;z-index:50;transition:transform .3s}
-            .sidebar.open{transform:translateX(0)}
-            .mobile-menu{display:flex}
-            .sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.6);z-index:40}
-            .sidebar-overlay.open{display:block}
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#EFF6FF',
+                            100: '#DBEAFE',
+                            200: '#BFDBFE',
+                            300: '#93C5FD',
+                            400: '#60A5FA',
+                            500: '#3B82F6',
+                            600: '#2563EB',
+                            700: '#1D4ED8',
+                            800: '#1E3A5F',
+                            900: '#0F2440',
+                            950: '#0A1929',
+                        }
+                    }
+                }
+            }
         }
-        .copy-btn{opacity:0;transition:opacity .2s}.code-block:hover .copy-btn{opacity:1}
-        .status-dot{width:8px;height:8px;border-radius:50%}
-        .status-active{background:#00ffc4;box-shadow:0 0 8px rgba(0,255,196,0.5)}
-        .table-row{border-bottom:1px solid rgba(255,255,255,0.04);transition:background .15s}
-        .table-row:hover{background:rgba(255,255,255,0.02)}
-        .arch-box{background:#050505;border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:40px 24px;overflow-x:auto}
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            .print-break { page-break-before: always; }
+            body { background: white !important; }
+            .page-container { box-shadow: none !important; max-width: 100% !important; margin: 0 !important; padding: 2cm !important; }
+            .cover-bg { background: #0F2440 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .cover-accent { background: #2563EB !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .section-number { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            table { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+
+        html { scroll-behavior: smooth; }
+
+        .toc-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .toc-link::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 2px;
+            background: #2563EB;
+            transition: width 0.3s ease;
+        }
+        .toc-link:hover::before,
+        .toc-link.active::before {
+            width: 8px;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .proposal-card {
+            transition: all 0.3s ease;
+        }
+        .proposal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.12);
+        }
+
+        @keyframes pulse-line {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
     </style>
 </head>
-<body class="grid-bg">
+<body class="bg-gray-100 font-sans text-gray-800 antialiased">
 
-<div id="sidebarOverlay" class="sidebar-overlay" onclick="toggleSidebar()"></div>
+    <!-- Floating Action Buttons -->
+    <div class="no-print fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <button onclick="window.print()" class="group flex items-center gap-2 bg-brand-700 hover:bg-brand-800 text-white px-5 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <iconify-icon icon="lucide:printer" width="18"></iconify-icon>
+            <span class="text-sm font-medium">Imprimir</span>
+        </button>
+        <button onclick="scrollToTop()" id="scrollTopBtn" class="opacity-0 translate-y-4 transition-all duration-300 flex items-center justify-center w-12 h-12 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl hover:border-brand-300">
+            <iconify-icon icon="lucide:arrow-up" width="20" class="text-brand-700"></iconify-icon>
+        </button>
+    </div>
 
-<nav class="fixed top-0 left-0 right-0 z-30 bg-[#030303]/80 backdrop-blur-xl border-b border-white/5">
-    <div class="flex items-center justify-between px-6 py-4">
-        <div class="flex items-center gap-4">
-            <button class="mobile-menu items-center justify-center w-10 h-10 rounded-lg border border-white/10 hover:border-[#00ffc4]/30 transition-all" onclick="toggleSidebar()">
-                <i data-lucide="menu" class="w-5 h-5"></i>
-            </button>
-            <a href="#hero" class="flex items-center gap-3 group">
-                <div class="w-9 h-9 rounded-lg bg-[#00ffc4] flex items-center justify-center">
-                    <i data-lucide="box" class="w-5 h-5 text-black"></i>
+    <!-- Main Container -->
+    <div class="page-container max-w-[900px] mx-auto bg-white shadow-2xl">
+
+        <!-- ==================== PORTADA ==================== -->
+        <div class="relative overflow-hidden">
+            <!-- Background -->
+            <div class="cover-bg bg-gradient-to-br from-brand-950 via-brand-900 to-brand-800 min-h-[92vh] flex flex-col items-center justify-center relative px-8 py-16">
+                <!-- Decorative elements -->
+                <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                    <div class="absolute -top-20 -right-20 w-80 h-80 bg-brand-600/10 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-brand-400/5 rounded-full blur-3xl"></div>
+                    <div class="absolute top-1/4 right-0 w-px h-40 bg-gradient-to-b from-transparent via-brand-400/30 to-transparent" style="animation: pulse-line 3s ease-in-out infinite;"></div>
+                    <div class="absolute bottom-1/4 left-0 w-px h-40 bg-gradient-to-b from-transparent via-brand-400/20 to-transparent" style="animation: pulse-line 4s ease-in-out infinite 1s;"></div>
+                    <!-- Grid pattern -->
+                    <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
                 </div>
-                <span class="text-lg font-semibold tracking-tight">OmniSynch</span>
-                <span class="badge badge-green text-[10px] hidden sm:inline-flex">v1.0</span>
-            </a>
-        </div>
-        <div class="flex items-center gap-3">
-            <div class="hidden md:flex items-center gap-2 text-sm text-neutral-500">
-                <div class="status-dot status-active"></div>Sistema Operativo
+
+                <div class="relative z-10 text-center max-w-2xl">
+                    <!-- Accent bar -->
+                    <div class="cover-accent w-16 h-1 bg-brand-500 mx-auto mb-10 rounded-full"></div>
+
+                    <!-- Icon -->
+                    <div class="mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <iconify-icon icon="lucide:wind" width="36" class="text-brand-300"></iconify-icon>
+                        </div>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 class="font-display text-4xl md:text-5xl lg:text-[3.4rem] font-bold text-white uppercase tracking-tight leading-[0.95] mb-6">
+                        Plan de Marketing<br>
+                        <span class="text-brand-400">para Redes Sociales</span>
+                    </h1>
+
+                    <!-- Divider -->
+                    <div class="w-24 h-px bg-gradient-to-r from-transparent via-brand-400/50 to-transparent mx-auto mb-8"></div>
+
+                    <!-- Company name -->
+                    <p class="text-lg md:text-xl text-brand-200 font-light tracking-wide mb-12">
+                        Almacén Refri Servicios Cartagena S.A.S.
+                    </p>
+
+                    <!-- Info grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-left max-w-lg mx-auto">
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:book-open" width="16" class="text-brand-400 mt-1 shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-400/70 mb-0.5">Asignatura</p>
+                                <p class="text-sm text-white/90">Marketing Digital y Redes Sociales</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:calendar" width="16" class="text-brand-400 mt-1 shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-400/70 mb-0.5">Fecha</p>
+                                <p class="text-sm text-white/90">Mayo de 2026</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:user" width="16" class="text-brand-400 mt-1 shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-400/70 mb-0.5">Docente</p>
+                                <p class="text-sm text-white/90">____________________</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="lucide:building-2" width="16" class="text-brand-400 mt-1 shrink-0"></iconify-icon>
+                            <div>
+                                <p class="text-[10px] uppercase tracking-widest text-brand-400/70 mb-0.5">Institución</p>
+                                <p class="text-sm text-white/90">____________________</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Integrantes -->
+                    <div class="mt-12 pt-8 border-t border-white/10">
+                        <p class="text-[10px] uppercase tracking-[0.2em] text-brand-400/60 mb-4">Integrantes del equipo</p>
+                        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                            <span class="text-sm text-white/80">Juan David Pedraza Valencia</span>
+                            <span class="text-brand-600">•</span>
+                            <span class="text-sm text-white/80">Sebastian Perea Carballo</span>
+                            <span class="text-brand-600">•</span>
+                            <span class="text-sm text-white/80">Kevin Carballo Marrugo</span>
+                            <span class="text-brand-600">•</span>
+                            <span class="text-sm text-white/80">Dayner Martelo Gaviria</span>
+                            <span class="text-brand-600">•</span>
+                            <span class="text-sm text-white/80">Douglas Josue Araujo Mendez</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://github.com/DevilDantes/OmniS" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-lg border border-white/10 hover:border-[#00ffc4]/30 text-sm font-medium text-neutral-400 hover:text-white transition-all">
-                <i data-lucide="github" class="w-4 h-4"></i><span class="hidden sm:inline">GitHub</span>
-            </a>
-        </div>
-    </div>
-</nav>
 
-<div class="flex pt-[65px]">
-<aside id="sidebar" class="sidebar fixed left-0 top-[65px] bottom-0 w-[280px] bg-[#030303]/95 backdrop-blur-xl border-r border-white/5 overflow-y-auto pb-10">
-    <div class="py-6">
-        <div class="px-5 mb-6">
-            <div class="flex items-center gap-2 px-3 py-2.5 rounded-lg border border-white/8 bg-white/[0.02]">
-                <i data-lucide="search" class="w-4 h-4 text-neutral-500"></i>
-                <input type="text" id="sidebarSearch" placeholder="Buscar..." class="bg-transparent text-sm text-white placeholder-neutral-600 outline-none w-full" oninput="filterSidebar(this.value)">
+            <!-- Bottom accent -->
+            <div class="h-1.5 bg-gradient-to-r from-brand-600 via-brand-400 to-brand-600"></div>
+        </div>
+
+
+        <!-- ==================== TABLA DE CONTENIDO ==================== -->
+        <section class="px-10 md:px-16 py-14 border-b border-gray-100">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-8 h-8 rounded-lg bg-brand-50 flex items-center justify-center">
+                    <iconify-icon icon="lucide:list" width="16" class="text-brand-600"></iconify-icon>
+                </div>
+                <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Tabla de Contenido</h2>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
+                <a href="#introduccion" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">1</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Introducción</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#descripcion" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">2</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Descripción de la empresa</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#objetivo" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">3</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Objetivo del plan de marketing</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#publico" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">4</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Público objetivo</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#estrategia" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">5</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Estrategia de contenido</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#presupuesto" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">6</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Presupuesto</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#calendario" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">7</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Calendario de publicaciones</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#propuestas" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">8</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Propuestas de publicaciones</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#herramientas" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">9</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Herramientas digitales</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#kpis" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">10</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">KPIs y análisis de resultados</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#responsabilidades" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">11</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Responsabilidades del equipo</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#implementacion" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">12</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Redes sociales e implementación</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#conclusiones" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">13</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Conclusiones</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+                <a href="#referencias" class="toc-link flex items-center justify-between py-3 border-b border-gray-50 group">
+                    <span class="flex items-center gap-3">
+                        <span class="section-number text-xs font-bold text-white bg-brand-600 w-6 h-6 rounded-md flex items-center justify-center shrink-0">14</span>
+                        <span class="text-sm text-gray-600 group-hover:text-brand-700 transition-colors">Referencias APA</span>
+                    </span>
+                    <iconify-icon icon="lucide:arrow-right" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors"></iconify-icon>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- ==================== SECCIONES DE CONTENIDO ==================== -->
+        <div class="px-10 md:px-16 py-14 space-y-16">
+
+            <!-- 1. Introducción -->
+            <section id="introduccion" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">01</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Introducción</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600">
+                        Las redes sociales se han convertido en una herramienta importante para las empresas, ya que permiten promocionar productos y servicios de manera rápida y accesible. Actualmente muchas personas utilizan plataformas como Facebook e Instagram para buscar información, conocer negocios y comunicarse directamente con empresas de servicios.
+                    </p>
+                    <p class="text-[15px] leading-relaxed text-gray-600 mt-4">
+                        El presente trabajo tiene como finalidad desarrollar un plan de marketing para redes sociales para Almacén Refri Servicios Cartagena S.A.S., buscando fortalecer su presencia digital mediante contenido informativo y visual relacionado con los servicios de refrigeración y aire acondicionado.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2. Descripción de la empresa -->
+            <section id="descripcion" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">02</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Descripción de la empresa</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-4">
+                        <a href="https://www.refriserviciosctg.com/" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors">Almacén Refri Servicios Cartagena S.A.S.</a> es una empresa ubicada en Cartagena dedicada a la venta, mantenimiento e instalación de equipos de refrigeración y aire acondicionado.
+                    </p>
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-6">
+                        La empresa ofrece servicios tanto para hogares como para empresas y negocios, incluyendo mantenimiento preventivo, reparación de aires acondicionados, instalación de equipos y venta de repuestos relacionados con refrigeración.
+                    </p>
+                    <div class="flex items-center gap-2 text-sm text-gray-500">
+                        <iconify-icon icon="lucide:facebook" width="16" class="text-brand-600"></iconify-icon>
+                        <span>Red social principal:</span>
+                        <a href="https://www.facebook.com/Refricartagena" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors font-medium">Facebook oficial Refri Servicios Cartagena</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Objetivo del plan de marketing -->
+            <section id="objetivo" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">03</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Objetivo del plan de marketing</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <div class="bg-brand-50 border border-brand-100 rounded-xl p-6">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center shrink-0 mt-0.5">
+                                <iconify-icon icon="lucide:target" width="16" class="text-white"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wider text-brand-600 mb-2">Objetivo general</p>
+                                <p class="text-[15px] leading-relaxed text-gray-700 font-medium">
+                                    Aumentar la visibilidad de Almacén Refri Servicios Cartagena S.A.S. en redes sociales mediante publicaciones constantes e informativas durante un periodo de 3 meses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Público objetivo -->
+            <section id="publico" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">04</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Público objetivo</h2>
+                </div>
+                <div class="pl-[52px] space-y-6">
+                    <!-- Segmentación demográfica -->
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">Segmentación demográfica</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                                <iconify-icon icon="lucide:users" width="18" class="text-brand-500 shrink-0"></iconify-icon>
+                                <p class="text-sm text-gray-700">Personas desde los 16 años en adelante</p>
+                            </div>
+                            <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                                <iconify-icon icon="lucide:heart" width="18" class="text-brand-500 shrink-0"></iconify-icon>
+                                <p class="text-sm text-gray-700">Hombres y mujeres</p>
+                            </div>
+                            <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                                <iconify-icon icon="lucide:map-pin" width="18" class="text-brand-500 shrink-0"></iconify-icon>
+                                <p class="text-sm text-gray-700">Residentes de Cartagena y zonas cercanas</p>
+                            </div>
+                            <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-4">
+                                <iconify-icon icon="lucide:building" width="18" class="text-brand-500 shrink-0"></iconify-icon>
+                                <p class="text-sm text-gray-700">Hogares, negocios y empresas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Intereses principales -->
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">Intereses principales</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-medium px-3.5 py-2 rounded-full border border-brand-100">
+                                <iconify-icon icon="lucide:wind" width="13"></iconify-icon> Aire acondicionado
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-medium px-3.5 py-2 rounded-full border border-brand-100">
+                                <iconify-icon icon="lucide:snowflake" width="13"></iconify-icon> Refrigeración
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-medium px-3.5 py-2 rounded-full border border-brand-100">
+                                <iconify-icon icon="lucide:laptop" width="13"></iconify-icon> Tecnología para el hogar y negocios
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-medium px-3.5 py-2 rounded-full border border-brand-100">
+                                <iconify-icon icon="lucide:wrench" width="13"></iconify-icon> Servicios de mantenimiento
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 bg-brand-50 text-brand-700 text-xs font-medium px-3.5 py-2 rounded-full border border-brand-100">
+                                <iconify-icon icon="lucide:settings" width="13"></iconify-icon> Reparaciones e instalaciones
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Estrategia de contenido -->
+            <section id="estrategia" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">05</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Estrategia de contenido</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-8">
+                        La estrategia estará enfocada en crear contenido sencillo, útil y visual para informar a las personas sobre los servicios de la empresa y mantener actividad constante en redes sociales.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Informativo -->
+                        <div class="proposal-card bg-white border border-gray-100 rounded-xl p-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:info" width="20" class="text-blue-600"></iconify-icon>
+                                </div>
+                                <h3 class="font-display text-base font-semibold text-gray-900 uppercase tracking-tight">Contenido informativo</h3>
+                            </div>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-blue-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Consejos para cuidar los aires acondicionados
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-blue-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Recomendaciones de mantenimiento
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-blue-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Información sobre ahorro de energía
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Promocional -->
+                        <div class="proposal-card bg-white border border-gray-100 rounded-xl p-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:megaphone" width="20" class="text-green-600"></iconify-icon>
+                                </div>
+                                <h3 class="font-display text-base font-semibold text-gray-900 uppercase tracking-tight">Contenido promocional</h3>
+                            </div>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-green-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Publicaciones de servicios disponibles
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-green-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Información de contacto
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-green-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Promoción de mantenimientos e instalaciones
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Visual -->
+                        <div class="proposal-card bg-white border border-gray-100 rounded-xl p-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-purple-50 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:image" width="20" class="text-purple-600"></iconify-icon>
+                                </div>
+                                <h3 class="font-display text-base font-semibold text-gray-900 uppercase tracking-tight">Contenido visual</h3>
+                            </div>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-purple-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Fotografías de trabajos realizados
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-purple-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Videos cortos mostrando instalaciones
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-purple-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Antes y después de mantenimientos
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Interactivo -->
+                        <div class="proposal-card bg-white border border-gray-100 rounded-xl p-6">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center">
+                                    <iconify-icon icon="lucide:message-circle" width="20" class="text-amber-600"></iconify-icon>
+                                </div>
+                                <h3 class="font-display text-base font-semibold text-gray-900 uppercase tracking-tight">Contenido interactivo</h3>
+                            </div>
+                            <ul class="space-y-2.5">
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-amber-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Encuestas en historias
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-amber-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Preguntas frecuentes
+                                </li>
+                                <li class="flex items-start gap-2 text-sm text-gray-600">
+                                    <iconify-icon icon="lucide:check" width="15" class="text-amber-500 mt-0.5 shrink-0"></iconify-icon>
+                                    Respuestas a comentarios y mensajes
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Presupuesto -->
+            <section id="presupuesto" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">06</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Presupuesto</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-6">
+                        Debido a que el contenido será realizado completamente por los integrantes del equipo utilizando herramientas gratuitas y dispositivos personales, actualmente no se contempla inversión económica.
+                    </p>
+                    <div class="overflow-hidden rounded-xl border border-gray-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-brand-900 text-white">
+                                    <th class="text-left font-semibold px-5 py-3.5">Actividad</th>
+                                    <th class="text-right font-semibold px-5 py-3.5 w-40">Presupuesto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5 text-gray-700">Diseño de publicaciones</td>
+                                    <td class="px-5 py-3.5 text-right text-gray-500 font-medium">$0</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5 text-gray-700">Grabación de videos</td>
+                                    <td class="px-5 py-3.5 text-right text-gray-500 font-medium">$0</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5 text-gray-700">Edición de contenido</td>
+                                    <td class="px-5 py-3.5 text-right text-gray-500 font-medium">$0</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5 text-gray-700">Herramientas digitales gratuitas</td>
+                                    <td class="px-5 py-3.5 text-right text-gray-500 font-medium">$0</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5 text-gray-700">Publicidad paga</td>
+                                    <td class="px-5 py-3.5 text-right text-gray-500 font-medium">$0</td>
+                                </tr>
+                                <tr class="bg-brand-50">
+                                    <td class="px-5 py-4 text-brand-900 font-bold">Total estimado</td>
+                                    <td class="px-5 py-4 text-right text-brand-700 font-bold text-base">$0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Calendario de publicaciones -->
+            <section id="calendario" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">07</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Calendario de publicaciones</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <div class="overflow-hidden rounded-xl border border-gray-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-brand-900 text-white">
+                                    <th class="text-left font-semibold px-5 py-3.5">Día</th>
+                                    <th class="text-left font-semibold px-5 py-3.5">Tipo de publicación</th>
+                                    <th class="text-left font-semibold px-5 py-3.5">Plataforma</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:calendar-days" width="14" class="text-brand-500"></iconify-icon>
+                                            Lunes
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Consejo de mantenimiento</td>
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:facebook" width="12"></iconify-icon> Facebook
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:calendar-days" width="14" class="text-brand-500"></iconify-icon>
+                                            Miércoles
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Foto de trabajo realizado</td>
+                                    <td class="px-5 py-3.5">
+                                        <div class="flex gap-1.5">
+                                            <span class="inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                                <iconify-icon icon="lucide:facebook" width="12"></iconify-icon> FB
+                                            </span>
+                                            <span class="inline-flex items-center gap-1 bg-pink-50 text-pink-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                                <iconify-icon icon="lucide:instagram" width="12"></iconify-icon> IG
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:calendar-days" width="14" class="text-brand-500"></iconify-icon>
+                                            Viernes
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Publicación promocional</td>
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:facebook" width="12"></iconify-icon> Facebook
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray-50/50">
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:calendar-days" width="14" class="text-brand-500"></iconify-icon>
+                                            Domingo
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Historia interactiva</td>
+                                    <td class="px-5 py-3.5">
+                                        <span class="inline-flex items-center gap-1.5 bg-pink-50 text-pink-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:instagram" width="12"></iconify-icon> Instagram
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 8. Propuestas de publicaciones -->
+            <section id="propuestas" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">08</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Propuestas de publicaciones</h2>
+                </div>
+                <div class="pl-[52px] space-y-4">
+                    <!-- Pub 1 -->
+                    <div class="proposal-card border border-gray-100 rounded-xl p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">Informativa</span>
+                            <span class="text-xs text-gray-400">Publicación 1</span>
+                        </div>
+                        <p class="text-[15px] text-gray-700 italic mb-3">"Realizar mantenimiento periódico a tu aire acondicionado ayuda a mejorar su rendimiento y reducir el consumo de energía."</p>
+                        <p class="text-xs text-gray-400 flex items-center gap-1.5">
+                            <iconify-icon icon="lucide:image" width="13"></iconify-icon> Formato: Imagen sencilla con texto
+                        </p>
+                    </div>
+                    <!-- Pub 2 -->
+                    <div class="proposal-card border border-gray-100 rounded-xl p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-green-600 bg-green-50 px-2.5 py-1 rounded-md">Promocional</span>
+                            <span class="text-xs text-gray-400">Publicación 2</span>
+                        </div>
+                        <p class="text-[15px] text-gray-700 italic mb-3">"¿Necesitas instalación o mantenimiento de aire acondicionado? Contáctanos y recibe atención personalizada."</p>
+                        <p class="text-xs text-gray-400 flex items-center gap-1.5">
+                            <iconify-icon icon="lucide:image" width="13"></iconify-icon> Formato: Imagen publicitaria
+                        </p>
+                    </div>
+                    <!-- Pub 3 -->
+                    <div class="proposal-card border border-gray-100 rounded-xl p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-purple-600 bg-purple-50 px-2.5 py-1 rounded-md">Visual</span>
+                            <span class="text-xs text-gray-400">Publicación 3</span>
+                        </div>
+                        <p class="text-[15px] text-gray-700 mb-3">Fotografía del antes y después de un mantenimiento realizado por la empresa.</p>
+                        <p class="text-xs text-gray-400 flex items-center gap-1.5">
+                            <iconify-icon icon="lucide:target" width="13"></iconify-icon> Objetivo: Mostrar resultados reales y generar confianza
+                        </p>
+                    </div>
+                    <!-- Pub 4 -->
+                    <div class="proposal-card border border-gray-100 rounded-xl p-6 bg-white">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md">Interactiva</span>
+                            <span class="text-xs text-gray-400">Publicación 4</span>
+                        </div>
+                        <p class="text-[15px] text-gray-700 mb-3">Encuesta en historias: "¿Hace cuánto realizas mantenimiento a tu aire acondicionado?"</p>
+                        <p class="text-xs text-gray-400 flex items-center gap-1.5">
+                            <iconify-icon icon="lucide:target" width="13"></iconify-icon> Objetivo: Generar interacción con los seguidores
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. Herramientas digitales -->
+            <section id="herramientas" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">09</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Herramientas digitales</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-6">
+                        Las herramientas que se utilizarán serán gratuitas y de fácil acceso:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <a href="https://www.canva.com/" target="_blank" class="proposal-card flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-5 group">
+                            <div class="w-11 h-11 rounded-xl bg-cyan-50 flex items-center justify-center shrink-0 group-hover:bg-cyan-100 transition-colors">
+                                <iconify-icon icon="lucide:palette" width="22" class="text-cyan-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">Canva</p>
+                                <p class="text-xs text-gray-400">Diseño de imágenes</p>
+                            </div>
+                            <iconify-icon icon="lucide:external-link" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors ml-auto shrink-0"></iconify-icon>
+                        </a>
+                        <a href="https://business.facebook.com/" target="_blank" class="proposal-card flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-5 group">
+                            <div class="w-11 h-11 rounded-xl bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-blue-100 transition-colors">
+                                <iconify-icon icon="lucide:layout-dashboard" width="22" class="text-blue-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">Meta Business Suite</p>
+                                <p class="text-xs text-gray-400">Administrar publicaciones</p>
+                            </div>
+                            <iconify-icon icon="lucide:external-link" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors ml-auto shrink-0"></iconify-icon>
+                        </a>
+                        <a href="https://www.capcut.com/" target="_blank" class="proposal-card flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-5 group">
+                            <div class="w-11 h-11 rounded-xl bg-violet-50 flex items-center justify-center shrink-0 group-hover:bg-violet-100 transition-colors">
+                                <iconify-icon icon="lucide:scissors" width="22" class="text-violet-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">CapCut</p>
+                                <p class="text-xs text-gray-400">Edición de videos cortos</p>
+                            </div>
+                            <iconify-icon icon="lucide:external-link" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors ml-auto shrink-0"></iconify-icon>
+                        </a>
+                        <a href="https://www.facebook.com/business/tools/insights" target="_blank" class="proposal-card flex items-center gap-4 bg-white border border-gray-100 rounded-xl p-5 group">
+                            <div class="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center shrink-0 group-hover:bg-indigo-100 transition-colors">
+                                <iconify-icon icon="lucide:bar-chart-3" width="22" class="text-indigo-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900 group-hover:text-brand-700 transition-colors">Facebook Insights</p>
+                                <p class="text-xs text-gray-400">Revisar estadísticas</p>
+                            </div>
+                            <iconify-icon icon="lucide:external-link" width="14" class="text-gray-300 group-hover:text-brand-500 transition-colors ml-auto shrink-0"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 10. KPIs y análisis de resultados -->
+            <section id="kpis" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">10</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">KPIs y análisis de resultados</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <p class="text-[15px] leading-relaxed text-gray-600 mb-6">
+                        Los indicadores que se tendrán en cuenta serán:
+                    </p>
+                    <div class="overflow-hidden rounded-xl border border-gray-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-brand-900 text-white">
+                                    <th class="text-left font-semibold px-5 py-3.5">KPI</th>
+                                    <th class="text-left font-semibold px-5 py-3.5">Objetivo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5">
+                                        <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:users" width="15" class="text-brand-500"></iconify-icon>
+                                            Número de seguidores
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Medir crecimiento</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5">
+                                        <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:eye" width="15" class="text-brand-500"></iconify-icon>
+                                            Alcance de publicaciones
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Evaluar visibilidad</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5">
+                                        <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:heart" width="15" class="text-brand-500"></iconify-icon>
+                                            Reacciones y comentarios
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Medir interacción</td>
+                                </tr>
+                                <tr class="bg-gray-50/50">
+                                    <td class="px-5 py-3.5">
+                                        <span class="flex items-center gap-2 text-gray-700 font-medium">
+                                            <iconify-icon icon="lucide:mail" width="15" class="text-brand-500"></iconify-icon>
+                                            Mensajes recibidos
+                                        </span>
+                                    </td>
+                                    <td class="px-5 py-3.5 text-gray-600">Medir interés de clientes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 flex items-center gap-2">
+                        <iconify-icon icon="lucide:info" width="14" class="text-gray-400"></iconify-icon>
+                        Los resultados serán revisados cada mes utilizando las estadísticas de Facebook e Instagram.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 11. Responsabilidades del equipo -->
+            <section id="responsabilidades" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">11</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Responsabilidades del equipo</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <div class="overflow-hidden rounded-xl border border-gray-200">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-brand-900 text-white">
+                                    <th class="text-left font-semibold px-5 py-3.5">Integrante</th>
+                                    <th class="text-left font-semibold px-5 py-3.5">Responsabilidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5 text-gray-800 font-medium whitespace-nowrap">Juan David Pedraza Valencia</td>
+                                    <td class="px-5 py-3.5 text-gray-600">
+                                        <span class="inline-flex items-center gap-1.5 bg-cyan-50 text-cyan-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:palette" width="12"></iconify-icon> Diseño de publicaciones
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5 text-gray-800 font-medium whitespace-nowrap">Sebastian Perea Carballo</td>
+                                    <td class="px-5 py-3.5 text-gray-600">
+                                        <span class="inline-flex items-center gap-1.5 bg-orange-50 text-orange-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:clipboard-check" width="12"></iconify-icon> Organización y supervisión del plan
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-white">
+                                    <td class="px-5 py-3.5 text-gray-800 font-medium whitespace-nowrap">Kevin Carballo Marrugo</td>
+                                    <td class="px-5 py-3.5 text-gray-600">
+                                        <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:camera" width="12"></iconify-icon> Grabación de fotografías y videos
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50/50">
+                                    <td class="px-5 py-3.5 text-gray-800 font-medium whitespace-nowrap">Dayner Martelo Gaviria</td>
+                                    <td class="px-5 py-3.5 text-gray-600">
+                                        <span class="inline-flex items-center gap-1.5 bg-violet-50 text-violet-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:film" width="12"></iconify-icon> Edición de contenido y reels
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td class="px-5 py-3.5 text-gray-800 font-medium whitespace-nowrap">Douglas Josue Araujo Mendez</td>
+                                    <td class="px-5 py-3.5 text-gray-600">
+                                        <span class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-md">
+                                            <iconify-icon icon="lucide:send" width="12"></iconify-icon> Publicación de contenido y respuesta a mensajes
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. Redes sociales y ejemplo de implementación -->
+            <section id="implementacion" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">12</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Redes sociales e implementación</h2>
+                </div>
+                <div class="pl-[52px] space-y-6">
+                    <!-- Links -->
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://www.refriserviciosctg.com/" target="_blank" class="proposal-card flex items-center gap-3 bg-white border border-gray-100 rounded-xl p-4 group flex-1">
+                            <div class="w-9 h-9 rounded-lg bg-brand-50 flex items-center justify-center shrink-0 group-hover:bg-brand-100 transition-colors">
+                                <iconify-icon icon="lucide:globe" width="18" class="text-brand-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Página web oficial</p>
+                                <p class="text-sm font-medium text-gray-800 group-hover:text-brand-700 transition-colors">refriserviciosctg.com</p>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/Refricartagena" target="_blank" class="proposal-card flex items-center gap-3 bg-white border border-gray-100 rounded-xl p-4 group flex-1">
+                            <div class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-blue-100 transition-colors">
+                                <iconify-icon icon="lucide:facebook" width="18" class="text-blue-600"></iconify-icon>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-400">Facebook oficial</p>
+                                <p class="text-sm font-medium text-gray-800 group-hover:text-brand-700 transition-colors">Refricartagena</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Ejemplo de implementación -->
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">Ejemplo de implementación</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                                <p class="text-sm text-gray-700">Publicar consejos básicos sobre mantenimiento</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                                <p class="text-sm text-gray-700">Compartir fotografías de trabajos realizados</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                                <p class="text-sm text-gray-700">Responder mensajes y comentarios diariamente</p>
+                            </div>
+                            <div class="flex items-start gap-3 bg-gray-50 rounded-lg p-4">
+                                <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+                                <p class="text-sm text-gray-700">Mantener publicaciones constantes cada semana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13. Conclusiones -->
+            <section id="conclusiones" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">13</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Conclusiones</h2>
+                </div>
+                <div class="pl-[52px] space-y-4">
+                    <p class="text-[15px] leading-relaxed text-gray-600">
+                        Las redes sociales representan una oportunidad accesible para que Almacén Refri Servicios Cartagena S.A.S. pueda mejorar su visibilidad y acercarse a más clientes sin necesidad de realizar inversiones económicas.
+                    </p>
+                    <p class="text-[15px] leading-relaxed text-gray-600">
+                        La implementación de publicaciones constantes y contenido visual permitirá mostrar los servicios de la empresa y generar mayor confianza tanto en hogares como en negocios y empresas interesadas en servicios de refrigeración y aire acondicionado.
+                    </p>
+                    <p class="text-[15px] leading-relaxed text-gray-600">
+                        Además, el uso de herramientas gratuitas facilita la creación de contenido y el seguimiento básico de resultados para mejorar continuamente las estrategias utilizadas.
+                    </p>
+                </div>
+            </section>
+
+            <!-- 14. Referencias APA -->
+            <section id="referencias" class="fade-in">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="section-number text-sm font-bold text-white bg-brand-600 w-9 h-9 rounded-lg flex items-center justify-center shrink-0">14</span>
+                    <h2 class="font-display text-2xl font-semibold text-brand-900 uppercase tracking-tight">Referencias APA</h2>
+                </div>
+                <div class="pl-[52px]">
+                    <div class="bg-gray-50 rounded-xl p-6 space-y-4">
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            InboundCycle. (s.f.). <em>¿Qué es un plan de marketing y cómo hacer uno?</em> Recuperado de <a href="https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-un-plan-de-marketing-y-como-hacer-uno" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://www.inboundcycle.com/blog-de-inbound-marketing/que-es-un-plan-de-marketing-y-como-hacer-uno</a>
+                        </p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Rock Content. (s.f.). <em>Plan de marketing: qué es y cómo elaborar uno paso a paso.</em> Recuperado de <a href="https://rockcontent.com/es/blog/plan-de-marketing/" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://rockcontent.com/es/blog/plan-de-marketing/</a>
+                        </p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Herrera, F. (s.f.). <em>6 elementos de un plan estratégico en Social Media.</em> Recuperado de <a href="https://www.fabianherrera.net/6-elementos-de-un-plan-estrategico-en-social-media/" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://www.fabianherrera.net/6-elementos-de-un-plan-estrategico-en-social-media/</a>
+                        </p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Social Media Today. (s.f.). <em>How Zara uses social media to drive brand awareness and sales.</em> Recuperado de <a href="https://www.socialmediatoday.com/news/how-zara-uses-social-media-to-drive-brand-awareness-and-sales/569524/" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://www.socialmediatoday.com/news/how-zara-uses-social-media-to-drive-brand-awareness-and-sales/569524/</a>
+                        </p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Almacén Refri Servicios Cartagena S.A.S. (s.f.). <em>Página web oficial.</em> Recuperado de <a href="https://www.refriserviciosctg.com/" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://www.refriserviciosctg.com/</a>
+                        </p>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Almacén Refri Servicios Cartagena S.A.S. (s.f.). <em>Facebook oficial.</em> Recuperado de <a href="https://www.facebook.com/Refricartagena" target="_blank" class="text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors break-all">https://www.facebook.com/Refricartagena</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
         </div>
-        <div class="px-5 mb-4"><p class="text-[10px] font-bold uppercase tracking-widest text-neutral-600">General</p></div>
-        <div class="space-y-0.5 px-2">
-            <a href="#hero" class="sidebar-link active flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="hero"><i data-lucide="home" class="w-4 h-4 shrink-0"></i>Inicio</a>
-            <a href="#caracteristicas" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="caracteristicas"><i data-lucide="sparkles" class="w-4 h-4 shrink-0"></i>Características</a>
-            <a href="#stack" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="stack"><i data-lucide="layers" class="w-4 h-4 shrink-0"></i>Stack Tecnológico</a>
-            <a href="#estructura" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="estructura"><i data-lucide="folder-tree" class="w-4 h-4 shrink-0"></i>Estructura</a>
+
+        <!-- ==================== FOOTER ==================== -->
+        <div class="bg-brand-950 px-10 md:px-16 py-8 text-center">
+            <p class="text-brand-400/50 text-xs tracking-wider uppercase">
+                Plan de Marketing para Redes Sociales — Almacén Refri Servicios Cartagena S.A.S. — Mayo 2026
+            </p>
         </div>
-        <div class="px-5 mt-6 mb-4"><p class="text-[10px] font-bold uppercase tracking-widest text-neutral-600">Instalación</p></div>
-        <div class="space-y-0.5 px-2">
-            <a href="#requisitos" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="requisitos"><i data-lucide="check-circle" class="w-4 h-4 shrink-0"></i>Requisitos</a>
-            <a href="#instalacion" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="instalacion"><i data-lucide="download" class="w-4 h-4 shrink-0"></i>Instalación Local</a>
-            <a href="#env-config" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="env-config"><i data-lucide="key" class="w-4 h-4 shrink-0"></i>Variables de Entorno</a>
-            <a href="#database" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="database"><i data-lucide="database" class="w-4 h-4 shrink-0"></i>Base de Datos</a>
-            <a href="#docker" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="docker"><i data-lucide="container" class="w-4 h-4 shrink-0"></i>Docker</a>
-        </div>
-        <div class="px-5 mt-6 mb-4"><p class="text-[10px] font-bold uppercase tracking-widest text-neutral-600">API Reference</p></div>
-        <div class="space-y-0.5 px-2">
-            <a href="#api-overview" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-overview"><i data-lucide="book-open" class="w-4 h-4 shrink-0"></i>Overview</a>
-            <a href="#api-auth" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-auth"><i data-lucide="lock" class="w-4 h-4 shrink-0"></i>Autenticación</a>
-            <a href="#api-productos" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-productos"><i data-lucide="package" class="w-4 h-4 shrink-0"></i>Productos</a>
-            <a href="#api-inventario" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-inventario"><i data-lucide="warehouse" class="w-4 h-4 shrink-0"></i>Inventario</a>
-            <a href="#api-ventas" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-ventas"><i data-lucide="shopping-cart" class="w-4 h-4 shrink-0"></i>Ventas</a>
-            <a href="#api-alertas" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-alertas"><i data-lucide="bell" class="w-4 h-4 shrink-0"></i>Alertas</a>
-            <a href="#api-ia" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-ia"><i data-lucide="brain" class="w-4 h-4 shrink-0"></i>IA Gemini</a>
-            <a href="#api-otros" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="api-otros"><i data-lucide="more-horizontal" class="w-4 h-4 shrink-0"></i>Otros Endpoints</a>
-        </div>
-        <div class="px-5 mt-6 mb-4"><p class="text-[10px] font-bold uppercase tracking-widest text-neutral-600">Sistema</p></div>
-        <div class="space-y-0.5 px-2">
-            <a href="#arquitectura" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="arquitectura"><i data-lucide="building-2" class="w-4 h-4 shrink-0"></i>Arquitectura</a>
-            <a href="#gemini-agent" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="gemini-agent"><i data-lucide="brain-circuit" class="w-4 h-4 shrink-0"></i>Agente Gemini</a>
-            <a href="#telegram" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="telegram"><i data-lucide="send" class="w-4 h-4 shrink-0"></i>Bot Telegram</a>
-            <a href="#seguridad" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="seguridad"><i data-lucide="shield" class="w-4 h-4 shrink-0"></i>Seguridad</a>
-            <a href="#auditoria" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="auditoria"><i data-lucide="file-text" class="w-4 h-4 shrink-0"></i>Auditoría</a>
-            <a href="#deploy" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="deploy"><i data-lucide="rocket" class="w-4 h-4 shrink-0"></i>Despliegue</a>
-            <a href="#roadmap" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="roadmap"><i data-lucide="map" class="w-4 h-4 shrink-0"></i>Roadmap</a>
-        </div>
-        <div class="px-5 mt-6 mb-4"><p class="text-[10px] font-bold uppercase tracking-widest text-neutral-600">Recursos</p></div>
-        <div class="space-y-0.5 px-2">
-            <a href="#troubleshooting" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="troubleshooting"><i data-lucide="wrench" class="w-4 h-4 shrink-0"></i>Troubleshooting</a>
-            <a href="#equipo" class="sidebar-link flex items-center gap-3 px-4 py-2.5 rounded-r-lg text-sm text-neutral-400" data-section="equipo"><i data-lucide="users" class="w-4 h-4 shrink-0"></i>Equipo</a>
-        </div>
+
     </div>
-</aside>
 
-<main class="lg:ml-[280px] flex-1 min-h-screen">
-<div class="max-w-[900px] mx-auto px-6 lg:px-12 py-12">
+    <script>
+        // Scroll to top button visibility
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                scrollTopBtn.style.opacity = '1';
+                scrollTopBtn.style.transform = 'translateY(0)';
+            } else {
+                scrollTopBtn.style.opacity = '0';
+                scrollTopBtn.style.transform = 'translateY(16px)';
+            }
+        });
 
-<!-- HERO -->
-<section id="hero" class="mb-20 animate-in">
-    <div class="mb-8 flex flex-wrap gap-2">
-        <span class="badge badge-green"><span class="status-dot status-active"></span>Activo</span>
-        <span class="badge badge-blue">Node.js 18+</span>
-        <span class="badge badge-purple">MySQL 8.0</span>
-        <span class="badge badge-yellow">Google Gemini AI</span>
-        <span class="badge badge-green">Telegram Bot</span>
-    </div>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tighter leading-[1.05] mb-6">
-        <span class="text-gradient">OmniSynch</span><br>
-        <span class="text-white/90">Sistema ERP de Gestión</span><br>
-        <span class="text-white/60">de Inventario</span>
-    </h1>
-    <p class="text-lg text-neutral-400 leading-relaxed max-w-2xl mb-10">Sistema ERP completo y moderno diseñado para PYMEs. Controla productos, inventario, ventas y reportes con un <strong class="text-white">agente inteligente Gemini</strong> y un <strong class="text-white">chatbot en Telegram</strong> que potencian la automatización del negocio.</p>
-    <div class="flex flex-wrap gap-4">
-        <a href="#instalacion" class="inline-flex items-center gap-2 px-8 py-4 bg-[#00ffc4] text-black font-semibold text-sm rounded-xl hover:scale-[1.02] transition-all" style="box-shadow:0 0 30px rgba(0,255,196,0.3)"><i data-lucide="terminal" class="w-4 h-4"></i>Comenzar Instalación</a>
-        <a href="#api-overview" class="inline-flex items-center gap-2 px-8 py-4 border border-white/10 text-white font-medium text-sm rounded-xl hover:border-[#00ffc4]/30 hover:bg-white/[0.02] transition-all"><i data-lucide="book-open" class="w-4 h-4"></i>Ver API Docs</a>
-    </div>
-    <div class="mt-12 p-5 rounded-2xl border border-white/5 bg-white/[0.01]">
-        <p class="text-[10px] uppercase tracking-widest text-neutral-600 mb-3 font-bold">Proyecto de Aula — Unitecnar</p>
-        <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-neutral-400">
-            <span>Juan David Pedraza Valencia</span><span class="text-neutral-700">•</span>
-            <span>Kener Safat Theran Revolledo</span><span class="text-neutral-700">•</span>
-            <span>Sebastian Perea Carballo</span><span class="text-neutral-700">•</span>
-            <span>Fabian Andrés Pérez Melendez</span><span class="text-neutral-700">•</span>
-            <span>Jesús Javier Sánchez Vanegas</span><span class="text-neutral-700">•</span>
-            <span>Douglas Josué Araujo Méndez</span>
-        </div>
-    </div>
-</section>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
-<!-- CARACTERÍSTICAS -->
-<section id="caracteristicas" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="sparkles" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Características Principales</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Todo lo que necesitas para gestionar tu inventario de forma inteligente.</p>
-    <div class="grid sm:grid-cols-2 gap-4">
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#00ffc4]/10 flex items-center justify-center mb-4"><i data-lucide="lock" class="w-5 h-5 text-[#00ffc4]"></i></div><h3 class="text-base font-semibold mb-2">Autenticación Segura</h3><p class="text-sm text-neutral-500 leading-relaxed">Sistema de login con JWT y protección contra intentos fallidos con registro en auditoría.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#60a5fa]/10 flex items-center justify-center mb-4"><i data-lucide="bar-chart-3" class="w-5 h-5 text-[#60a5fa]"></i></div><h3 class="text-base font-semibold mb-2">Dashboard Interactivo</h3><p class="text-sm text-neutral-500 leading-relaxed">Métricas en tiempo real, alertas inteligentes y visualización de datos del negocio.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#a855f7]/10 flex items-center justify-center mb-4"><i data-lucide="warehouse" class="w-5 h-5 text-[#a855f7]"></i></div><h3 class="text-base font-semibold mb-2">Gestión de Inventario</h3><p class="text-sm text-neutral-500 leading-relaxed">Control avanzado de stock, productos, categorías, marcas y variantes con SKUs únicos.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#facc15]/10 flex items-center justify-center mb-4"><i data-lucide="shopping-cart" class="w-5 h-5 text-[#facc15]"></i></div><h3 class="text-base font-semibold mb-2">Sistema de Ventas</h3><p class="text-sm text-neutral-500 leading-relaxed">Punto de venta integrado, órdenes con múltiples items y reportes de transacciones.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#f87171]/10 flex items-center justify-center mb-4"><i data-lucide="users" class="w-5 h-5 text-[#f87171]"></i></div><h3 class="text-base font-semibold mb-2">Gestión de Usuarios</h3><p class="text-sm text-neutral-500 leading-relaxed">Roles granulares (admin, gerente, vendedor, almacén) con permisos diferenciados.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#00ffc4]/10 flex items-center justify-center mb-4"><i data-lucide="brain" class="w-5 h-5 text-[#00ffc4]"></i></div><h3 class="text-base font-semibold mb-2">Agente Inteligente Gemini</h3><p class="text-sm text-neutral-500 leading-relaxed">Agente de automatización con Google Gemini que analiza alertas, recomienda acciones y supervisa el inventario.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#60a5fa]/10 flex items-center justify-center mb-4"><i data-lucide="send" class="w-5 h-5 text-[#60a5fa]"></i></div><h3 class="text-base font-semibold mb-2">Chatbot Telegram + Gemini</h3><p class="text-sm text-neutral-500 leading-relaxed">Bot conversacional en Telegram potenciado con IA para consultar inventario, ventas y recibir alertas.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#a855f7]/10 flex items-center justify-center mb-4"><i data-lucide="smartphone" class="w-5 h-5 text-[#a855f7]"></i></div><h3 class="text-base font-semibold mb-2">Interfaz Responsive</h3><p class="text-sm text-neutral-500 leading-relaxed">Optimizada para desktop y dispositivos móviles con Bootstrap 5.</p></div>
-    </div>
-</section>
+        // Fade-in on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        };
 
-<!-- STACK -->
-<section id="stack" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="layers" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Stack Tecnológico</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Las tecnologías que hacen posible OmniSynch.</p>
-    <div class="section-card">
-        <div class="flex flex-wrap gap-2 mb-8">
-            <button class="tab-btn active" onclick="switchTab(event,'tab-backend')">Backend</button>
-            <button class="tab-btn" onclick="switchTab(event,'tab-frontend')">Frontend</button>
-            <button class="tab-btn" onclick="switchTab(event,'tab-devops')">DevOps</button>
-            <button class="tab-btn" onclick="switchTab(event,'tab-ia')">IA & Bot</button>
-        </div>
-        <div id="tab-backend" class="tab-content active"><div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center shrink-0"><span class="text-xl font-bold text-green-400">N</span></div><div><h4 class="font-semibold text-sm mb-1">Node.js con Express.js</h4><p class="text-sm text-neutral-500">Framework HTTP robusto para construir la API REST del sistema.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0"><i data-lucide="database" class="w-6 h-6 text-blue-400"></i></div><div><h4 class="font-semibold text-sm mb-1">MySQL 8.0 (Aiven Cloud)</h4><p class="text-sm text-neutral-500">Base de datos relacional en la nube con pool de conexiones y SSL.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center shrink-0"><i data-lucide="key-round" class="w-6 h-6 text-yellow-400"></i></div><div><h4 class="font-semibold text-sm mb-1">JWT (jsonwebtoken)</h4><p class="text-sm text-neutral-500">Autenticación stateless con tokens de 8 horas de expiración.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center shrink-0"><i data-lucide="send" class="w-6 h-6 text-purple-400"></i></div><div><h4 class="font-semibold text-sm mb-1">axios + dotenv</h4><p class="text-sm text-neutral-500">Cliente HTTP para peticiones externas y gestión segura de variables de entorno.</p></div></div>
-        </div></div>
-        <div id="tab-frontend" class="tab-content"><div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center shrink-0"><span class="text-xl font-bold text-orange-400">H</span></div><div><h4 class="font-semibold text-sm mb-1">HTML5, CSS3, JavaScript ES6+</h4><p class="text-sm text-neutral-500">Tecnologías web nativas para una interfaz rápida y sin dependencias pesadas.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center shrink-0"><span class="text-xl font-bold text-purple-400">B</span></div><div><h4 class="font-semibold text-sm mb-1">Bootstrap 5.3</h4><p class="text-sm text-neutral-500">Framework de diseño responsivo con componentes pre-construidos.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0"><i data-lucide="bell-ring" class="w-6 h-6 text-pink-400"></i></div><div><h4 class="font-semibold text-sm mb-1">SweetAlert2 + Bootstrap Icons</h4><p class="text-sm text-neutral-500">Notificaciones mejoradas e iconografía consistente en toda la interfaz.</p></div></div>
-        </div></div>
-        <div id="tab-devops" class="tab-content"><div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center shrink-0"><i data-lucide="git-branch" class="w-6 h-6 text-orange-400"></i></div><div><h4 class="font-semibold text-sm mb-1">Git + GitHub</h4><p class="text-sm text-neutral-500">Control de versiones con repositorio público en GitHub.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-neutral-500/10 flex items-center justify-center shrink-0"><i data-lucide="train-front" class="w-6 h-6 text-neutral-300"></i></div><div><h4 class="font-semibold text-sm mb-1">Railway</h4><p class="text-sm text-neutral-500">Plataforma de despliegue en la nube con detección automática de Node.js.</p></div></div>
-        </div></div>
-        <div id="tab-ia" class="tab-content"><div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center shrink-0"><i data-lucide="brain" class="w-6 h-6 text-yellow-400"></i></div><div><h4 class="font-semibold text-sm mb-1">Google Generative AI (Gemini)</h4><p class="text-sm text-neutral-500">Motor de IA utilizado en dos capacidades: el <strong class="text-white">agente de automatización</strong> que analiza alertas y genera recomendaciones, y el <strong class="text-white">chatbot de Telegram</strong> que responde consultas en lenguaje natural.</p></div></div>
-            <div class="flex items-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0"><i data-lucide="send" class="w-6 h-6 text-blue-400"></i></div><div><h4 class="font-semibold text-sm mb-1">node-telegram-bot-api</h4><p class="text-sm text-neutral-500">Integración nativa con la API de Telegram para el bot OmniBot con polling cada 3 segundos.</p></div></div>
-        </div></div>
-    </div>
-</section>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-<!-- ESTRUCTURA -->
-<section id="estructura" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="folder-tree" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Estructura del Proyecto</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Organización modular del código fuente.</p>
-    <div class="code-block"><div class="code-header"><div class="flex items-center gap-2"><div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-red-500/60"></div><div class="w-3 h-3 rounded-full bg-yellow-500/60"></div><div class="w-3 h-3 rounded-full bg-green-500/60"></div></div><span class="text-xs text-neutral-500 ml-2">OmniS/</span></div><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-neutral-300"><pre>OmniS/
-├── <span class="fn">backend/</span>
-│   ├── server.js              <span class="cm"># Punto de entrada Express</span>
-│   ├── <span class="fn">telegram/</span>
-│   │   └── bot.js             <span class="cm"># Bot Telegram con IA Gemini</span>
-│   └── node_modules/
-├── <span class="fn">routes/</span>                      <span class="cm"># API Endpoints</span>
-│   ├── auth.js                <span class="cm"># Autenticación y login</span>
-│   ├── productos.js           <span class="cm"># CRUD de productos</span>
-│   ├── inventario.js          <span class="cm"># Control de stock</span>
-│   ├── ventas.js              <span class="cm"># Órdenes de venta</span>
-│   ├── categorias.js          <span class="cm"># Gestión de categorías</span>
-│   ├── marcas.js              <span class="cm"># Gestión de marcas</span>
-│   ├── proveedores.js         <span class="cm"># Gestión de proveedores</span>
-│   ├── clientes.js            <span class="cm"># Gestión de clientes</span>
-│   ├── usuarios.js            <span class="cm"># Gestión de usuarios</span>
-│   ├── alertas.js             <span class="cm"># Alertas + agente Gemini</span>
-│   ├── dashboard.js           <span class="cm"># Métricas</span>
-│   ├── reportes.js            <span class="cm"># Reportes generales</span>
-│   ├── reporteInventario.js   <span class="cm"># Reportes inventario</span>
-│   ├── auditoria.js           <span class="cm"># Registro auditoría</span>
-│   └── ia.js                  <span class="cm"># Endpoints agente IA Gemini</span>
-├── <span class="fn">frontend/dist/</span>
-│   ├── index.html             <span class="cm"># Página principal</span>
-│   ├── login.html             <span class="cm"># Login</span>
-│   ├── panel.html             <span class="cm"># Panel admin</span>
-│   ├── tienda.html            <span class="cm"># Vista tienda</span>
-│   ├── <span class="fn">js/</span>                   <span class="cm"># Scripts frontend</span>
-│   ├── <span class="fn">css/</span>                  <span class="cm"># Estilos</span>
-│   └── <span class="fn">img/</span>                  <span class="cm"># Imágenes</span>
-├── db.js                      <span class="cm"># Config BD</span>
-├── package.json
-├── .env                       <span class="cm"># Variables entorno</span>
-├── .gitignore
-└── README.md</pre></div></div>
-</section>
+        fadeElements.forEach(el => observer.observe(el));
 
-<!-- REQUISITOS -->
-<section id="requisitos" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="check-circle" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Requisitos Previos</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Software necesario antes de instalar.</p>
-    <div class="section-card">
-        <div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="border-b border-white/10"><th class="text-left py-3 px-4 text-neutral-400 font-medium">Software</th><th class="text-left py-3 px-4 text-neutral-400 font-medium">Versión</th><th class="text-left py-3 px-4 text-neutral-400 font-medium">Enlace</th></tr></thead><tbody>
-            <tr class="table-row"><td class="py-3 px-4 font-medium">Node.js</td><td class="py-3 px-4"><span class="badge badge-green">18.0.0+</span></td><td class="py-3 px-4"><a href="https://nodejs.org/" class="text-[#00ffc4] hover:underline" target="_blank">nodejs.org</a></td></tr>
-            <tr class="table-row"><td class="py-3 px-4 font-medium">npm</td><td class="py-3 px-4"><span class="badge badge-green">8.0.0+</span></td><td class="py-3 px-4 text-neutral-500">Incluido con Node.js</td></tr>
-            <tr class="table-row"><td class="py-3 px-4 font-medium">Git</td><td class="py-3 px-4"><span class="badge badge-green">2.30.0+</span></td><td class="py-3 px-4"><a href="https://git-scm.com/" class="text-[#00ffc4] hover:underline" target="_blank">git-scm.com</a></td></tr>
-            <tr class="table-row"><td class="py-3 px-4 font-medium">MySQL</td><td class="py-3 px-4"><span class="badge badge-blue">8.0+ (opcional local)</span></td><td class="py-3 px-4"><a href="https://www.mysql.com/" class="text-[#00ffc4] hover:underline" target="_blank">mysql.com</a></td></tr>
-        </tbody></table></div>
-        <div class="mt-8 p-5 rounded-xl bg-white/[0.02] border border-white/5"><p class="text-xs text-neutral-500 mb-3 font-medium uppercase tracking-wider">Verificar instalación</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">node</span> --version    <span class="cm"># v18.17.0+</span>
-<span class="fn">npm</span> --version     <span class="cm"># 9.6.7+</span>
-<span class="fn">git</span> --version     <span class="cm"># 2.40.0+</span>
-<span class="fn">mysql</span> --version   <span class="cm"># 8.0.33+ (si es local)</span></pre></div></div></div>
-    </div>
-</section>
+        // Active TOC link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-link');
 
-<!-- INSTALACIÓN -->
-<section id="instalacion" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="download" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Instalación Rápida</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">5 pasos para tener OmniSynch corriendo localmente.</p>
-    <div class="space-y-6">
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">1</div><h3 class="text-lg font-semibold">Clonar el Repositorio</h3></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">git</span> clone https://github.com/DevilDantes/OmniS.git
-<span class="fn">cd</span> OmniS</pre></div></div></div>
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">2</div><h3 class="text-lg font-semibold">Instalar Dependencias</h3></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">npm</span> install</pre></div></div><p class="text-sm text-neutral-500 mt-3 ml-11">⏱ Tiempo estimado: 2-5 minutos</p></div>
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">3</div><h3 class="text-lg font-semibold">Configurar Variables de Entorno</h3></div><p class="text-sm text-neutral-400 mb-4 ml-11">Crea un archivo <code class="font-mono text-[#00ffc4] bg-[#00ffc4]/5 px-2 py-0.5 rounded">.env</code> en la raíz. Ve a <a href="#env-config" class="text-[#00ffc4] hover:underline">Variables de Entorno</a> para el contenido completo.</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="cm"># Windows</span>
-<span class="fn">type</span> nul <span class="op">></span> .env
-<span class="cm"># macOS/Linux</span>
-<span class="fn">touch</span> .env</pre></div></div></div>
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">4</div><h3 class="text-lg font-semibold">Verificar Base de Datos</h3></div><p class="text-sm text-neutral-400 ml-11">Asegúrate de que las credenciales en <code class="font-mono text-[#00ffc4] bg-[#00ffc4]/5 px-2 py-0.5 rounded">.env</code> son correctas. Ve a <a href="#database" class="text-[#00ffc4] hover:underline">Base de Datos</a>.</p></div>
-        <div class="section-card glow-green"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">5</div><h3 class="text-lg font-semibold">Iniciar el Servidor</h3></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">npm</span> start</pre></div></div><div class="mt-4 ml-11 p-4 rounded-xl bg-green-500/5 border border-green-500/10"><p class="text-sm text-green-400 font-mono">✅ Servidor escuchando en el puerto 3000</p><p class="text-sm text-green-400 font-mono">🤖 OmniBot iniciado</p><p class="text-sm text-neutral-400 mt-2">Accede a: <code class="text-[#00ffc4]">http://localhost:3000</code></p></div></div>
-    </div>
-</section>
+        const tocObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    tocLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '-80px 0px -60% 0px'
+        });
 
-<!-- ENV CONFIG -->
-<section id="env-config" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="key" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Variables de Entorno</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Configuración completa del archivo <code class="font-mono text-[#00ffc4]">.env</code></p>
-    <div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">.env</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="cm"># ==========================================</span>
-<span class="cm"># 🗄️ BASE DE DATOS</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">DB_HOST</span>=<span class="str">mysql-3baf3f9c-unitecnar-ab67.a.aivencloud.com</span>
-<span class="prop">DB_USER</span>=<span class="str">avnadmin</span>
-<span class="prop">DB_PASSWORD</span>=<span class="str">tu_contraseña_aqui</span>
-<span class="prop">DB_NAME</span>=<span class="str">omnisynch_inventory</span>
-<span class="prop">DB_PORT</span>=<span class="num">17166</span>
+        sections.forEach(section => tocObserver.observe(section));
+    </script>
 
-<span class="cm"># ==========================================</span>
-<span class="cm"># 🔐 AUTENTICACIÓN</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">JWT_SECRET</span>=<span class="str">tu_clave_secreta_jwt_super_segura</span>
-
-<span class="cm"># ==========================================</span>
-<span class="cm"># 🤖 TELEGRAM BOT</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">TELEGRAM_BOT_TOKEN</span>=<span class="str">tu_token_de_bot_aqui</span>
-
-<span class="cm"># ==========================================</span>
-<span class="cm"># 🧠 GOOGLE GEMINI AI</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">GEMINI_API_KEY</span>=<span class="str">tu_api_key_gemini_aqui</span>
-
-<span class="cm"># ==========================================</span>
-<span class="cm"># 📧 EMAIL (Opcional — notificaciones)</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">EMAIL_USER</span>=<span class="str">tu_email@ejemplo.com</span>
-<span class="prop">EMAIL_PASS</span>=<span class="str">tu_contraseña_app</span>
-<span class="prop">EMAIL_DESTINO</span>=<span class="str">destino@ejemplo.com</span>
-
-<span class="cm"># ==========================================</span>
-<span class="cm"># 🌐 SERVIDOR</span>
-<span class="cm"># ==========================================</span>
-<span class="prop">PORT</span>=<span class="num">3000</span>
-<span class="prop">NODE_ENV</span>=<span class="str">development</span></pre></div></div>
-    <div class="mt-8 space-y-4">
-        <h3 class="text-xl font-semibold mb-4">¿Cómo obtener los tokens?</h3>
-        <div class="section-card !p-6"><div class="flex items-center gap-3 mb-3"><span class="text-2xl">🤖</span><h4 class="font-semibold">Telegram Bot Token</h4></div><ol class="text-sm text-neutral-400 space-y-2 ml-11 list-decimal list-inside"><li>Abre Telegram y busca <code class="font-mono text-[#00ffc4]">@BotFather</code></li><li>Envía <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">/newbot</code></li><li>Sigue las instrucciones (nombre + username)</li><li>Copia el token generado en <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">.env</code></li></ol></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-3 mb-3"><span class="text-2xl">🧠</span><h4 class="font-semibold">Google Gemini API Key</h4></div><ol class="text-sm text-neutral-400 space-y-2 ml-11 list-decimal list-inside"><li>Ve a <a href="https://aistudio.google.com/app/apikey" class="text-[#00ffc4] hover:underline" target="_blank">Google AI Studio</a></li><li>Haz clic en <strong class="text-white">"Create API Key"</strong></li><li>Selecciona tu proyecto de Google Cloud</li><li>Copia la API key en <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">.env</code></li></ol><p class="text-xs text-neutral-600 mt-3 ml-11">⚠ Esta misma key se utiliza tanto para el agente de automatización como para el chatbot de Telegram.</p></div>
-    </div>
-</section>
-
-<!-- DATABASE -->
-<section id="database" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="database" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Base de Datos</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Configuración de MySQL local o en la nube.</p>
-    <div class="flex flex-wrap gap-2 mb-8"><button class="tab-btn active" onclick="switchTab(event,'tab-cloud')">☁️ Aiven Cloud</button><button class="tab-btn" onclick="switchTab(event,'tab-local')">💻 MySQL Local</button></div>
-    <div id="tab-cloud" class="tab-content active"><div class="section-card"><p class="text-sm text-neutral-400 mb-6">OmniSynch usa <strong class="text-white">Aiven.io</strong> para MySQL en la nube con conexión SSL.</p><div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">db.js</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="kw">import</span> mysql <span class="kw">from</span> <span class="str">'mysql2/promise'</span>;
-<span class="kw">export const</span> <span class="var">db</span> <span class="op">=</span> <span class="kw">await</span> mysql.<span class="fn">createPool</span>({
-  <span class="prop">host</span>: process.env.<span class="var">DB_HOST</span>,
-  <span class="prop">user</span>: process.env.<span class="var">DB_USER</span>,
-  <span class="prop">password</span>: process.env.<span class="var">DB_PASSWORD</span>,
-  <span class="prop">database</span>: process.env.<span class="var">DB_NAME</span>,
-  <span class="prop">port</span>: process.env.<span class="var">DB_PORT</span>,
-  <span class="prop">ssl</span>: { <span class="prop">rejectUnauthorized</span>: <span class="num">false</span> },
-  <span class="prop">waitForConnections</span>: <span class="num">true</span>,
-  <span class="prop">connectionLimit</span>: <span class="num">10</span>,
-  <span class="prop">queueLimit</span>: <span class="num">0</span>
-});</pre></div></div></div></div>
-    <div id="tab-local" class="tab-content"><div class="section-card"><h4 class="font-semibold mb-4">Instalación de MySQL Local</h4><div class="space-y-4"><div><p class="text-sm text-neutral-400 mb-2 font-medium">Windows:</p><p class="text-sm text-neutral-500">Descarga MySQL Community Server desde <a href="https://dev.mysql.com/downloads/mysql/" class="text-[#00ffc4] hover:underline" target="_blank">dev.mysql.com</a>.</p></div><div><p class="text-sm text-neutral-400 mb-2 font-medium">macOS:</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">brew</span> install mysql
-<span class="fn">brew</span> services start mysql</pre></div></div></div><div><p class="text-sm text-neutral-400 mb-2 font-medium">Linux (Ubuntu):</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">sudo</span> apt-get install mysql-server
-<span class="fn">sudo</span> mysql_secure_installation</pre></div></div></div></div><div class="mt-6 pt-6 border-t border-white/5"><p class="text-sm text-neutral-400 mb-3 font-medium">Crear la base de datos:</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">mysql</span> -u root -p
-<span class="kw">CREATE DATABASE</span> omnisynch_inventory;
-<span class="kw">USE</span> omnisynch_inventory;
-<span class="kw">SOURCE</span> init.sql;</pre></div></div></div></div></div>
-</section>
-
-<!-- DOCKER -->
-<section id="docker" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="container" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Docker</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Despliegue containerizado con Docker Compose.</p>
-    <div class="flex flex-wrap gap-2 mb-6"><button class="tab-btn active" onclick="switchTab(event,'tab-dockerfile')">Dockerfile</button><button class="tab-btn" onclick="switchTab(event,'tab-compose')">docker-compose.yml</button><button class="tab-btn" onclick="switchTab(event,'tab-docker-cmd')">Comandos</button></div>
-    <div id="tab-dockerfile" class="tab-content active"><div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">Dockerfile</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="kw">FROM</span> node:18-alpine
-<span class="kw">WORKDIR</span> /app
-<span class="kw">COPY</span> package*.json ./
-<span class="kw">RUN</span> npm ci --only=production
-<span class="kw">COPY</span> . .
-<span class="kw">EXPOSE</span> 3000
-<span class="kw">ENV</span> NODE_ENV=production
-<span class="kw">CMD</span> ["npm", "start"]</pre></div></div></div>
-    <div id="tab-compose" class="tab-content"><div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">docker-compose.yml</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="attr">version</span>: <span class="str">'3.8'</span>
-<span class="attr">services</span>:
-  <span class="attr">app</span>:
-    <span class="attr">build</span>: .
-    <span class="attr">ports</span>: [<span class="str">"3000:3000"</span>]
-    <span class="attr">environment</span>:
-      - <span class="prop">DB_HOST</span>=mysql
-      - <span class="prop">GEMINI_API_KEY</span>=<span class="str">${GEMINI_API_KEY}</span>
-      - <span class="prop">TELEGRAM_BOT_TOKEN</span>=<span class="str">${TELEGRAM_BOT_TOKEN}</span>
-      - <span class="prop">JWT_SECRET</span>=<span class="str">${JWT_SECRET}</span>
-    <span class="attr">depends_on</span>: [mysql]
-  <span class="attr">mysql</span>:
-    <span class="attr">image</span>: <span class="str">mysql:8.0</span>
-    <span class="attr">environment</span>:
-      - <span class="prop">MYSQL_ROOT_PASSWORD</span>=root_password
-      - <span class="prop">MYSQL_DATABASE</span>=omnisynch_inventory
-    <span class="attr">ports</span>: [<span class="str">"3306:3306"</span>]
-    <span class="attr">volumes</span>: [mysql_data:/var/lib/mysql]
-<span class="attr">volumes</span>:
-  mysql_data:</pre></div></div></div>
-    <div id="tab-docker-cmd" class="tab-content"><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="fn">docker-compose</span> build        <span class="cm"># Build</span>
-<span class="fn">docker-compose</span> up -d        <span class="cm"># Ejecutar</span>
-<span class="fn">docker-compose</span> logs -f app   <span class="cm"># Ver logs</span>
-<span class="fn">docker-compose</span> down          <span class="cm"># Detener</span></pre></div></div></div>
-</section>
-
-<!-- API OVERVIEW -->
-<section id="api-overview" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="book-open" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">API Reference</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Documentación completa de los endpoints REST.</p>
-    <div class="section-card">
-        <div class="mb-6"><h3 class="font-semibold mb-3">Headers Requeridos</h3><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="prop">Authorization</span>: Bearer <span class="str">eyJhbGciOiJIUzI1NiIs...</span>
-<span class="prop">Content-Type</span>: <span class="str">application/json</span></pre></div></div></div>
-        <div class="mb-6"><h3 class="font-semibold mb-3">Códigos de Estado HTTP</h3><div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="border-b border-white/10"><th class="text-left py-2 px-3 text-neutral-400 font-medium">Código</th><th class="text-left py-2 px-3 text-neutral-400 font-medium">Significado</th></tr></thead><tbody>
-            <tr class="table-row"><td class="py-2 px-3"><span class="badge badge-green">200</span></td><td class="py-2 px-3 text-neutral-400">Solicitud exitosa</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="badge badge-green">201</span></td><td class="py-2 px-3 text-neutral-400">Recurso creado</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="badge badge-yellow">400</span></td><td class="py-2 px-3 text-neutral-400">Solicitud incorrecta</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="badge badge-red">401</span></td><td class="py-2 px-3 text-neutral-400">No autenticado</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="badge badge-red">500</span></td><td class="py-2 px-3 text-neutral-400">Error del servidor</td></tr>
-        </tbody></table></div></div>
-        <div><h3 class="font-semibold mb-3">Resumen de Endpoints</h3><div class="overflow-x-auto"><table class="w-full text-sm"><thead><tr class="border-b border-white/10"><th class="text-left py-2 px-3 text-neutral-400 font-medium">Método</th><th class="text-left py-2 px-3 text-neutral-400 font-medium">Endpoint</th><th class="text-left py-2 px-3 text-neutral-400 font-medium">Descripción</th></tr></thead><tbody>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/auth/login</td><td class="py-2 px-3 text-neutral-400">Iniciar sesión</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/productos</td><td class="py-2 px-3 text-neutral-400">Listar productos</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/producto</td><td class="py-2 px-3 text-neutral-400">Crear producto</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-put">PUT</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/productos/:id</td><td class="py-2 px-3 text-neutral-400">Actualizar producto</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-delete">DEL</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/productos/:id</td><td class="py-2 px-3 text-neutral-400">Eliminar producto</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/inventario</td><td class="py-2 px-3 text-neutral-400">Ver inventario</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/inventario</td><td class="py-2 px-3 text-neutral-400">Movimiento inventario</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/ventas</td><td class="py-2 px-3 text-neutral-400">Historial ventas</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/ventas</td><td class="py-2 px-3 text-neutral-400">Crear venta</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/alertas</td><td class="py-2 px-3 text-neutral-400">Ver alertas</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/alertas/analizar-ia</td><td class="py-2 px-3 text-neutral-400">Analizar con agente IA</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-post">POST</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/ia/analizar-ia</td><td class="py-2 px-3 text-neutral-400">Análisis con Gemini</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/dashboard</td><td class="py-2 px-3 text-neutral-400">Métricas</td></tr>
-            <tr class="table-row"><td class="py-2 px-3"><span class="endpoint-method method-get">GET</span></td><td class="py-2 px-3 font-mono text-xs text-neutral-300">/api/auditoria</td><td class="py-2 px-3 text-neutral-400">Registro auditoría</td></tr>
-        </tbody></table></div></div>
-    </div>
-</section>
-
-<!-- API AUTH -->
-<section id="api-auth" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="lock" class="w-6 h-6 text-[#00ffc4]"></i>Autenticación</h3>
-    <div class="api-card p-6">
-        <div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/auth/login</code><span class="badge badge-green ml-auto">Público</span></div>
-        <p class="text-sm text-neutral-400 mb-6">Inicia sesión y obtiene un token JWT válido por 8 horas.</p>
-        <div class="mb-6"><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold mb-3">Request Body</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"correo"</span>: <span class="str">"admin@ejemplo.com"</span>,
-  <span class="prop">"password"</span>: <span class="str">"contraseña123"</span>
-}</pre></div></div></div>
-        <div class="mb-6"><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold mb-3">Response 200 ✓</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"ok"</span>: <span class="num">true</span>,
-  <span class="prop">"token"</span>: <span class="str">"eyJhbGciOiJIUzI1NiIs..."</span>,
-  <span class="prop">"usuario"</span>: {
-    <span class="prop">"nombre"</span>: <span class="str">"Administrador"</span>,
-    <span class="prop">"rol"</span>: <span class="str">"admin"</span>,
-    <span class="prop">"correo"</span>: <span class="str">"admin@ejemplo.com"</span>
-  }
-}</pre></div></div></div>
-        <div><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold mb-3">Error 401 ✗</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{ <span class="prop">"error"</span>: <span class="str">"Credenciales inválidas o usuario inactivo"</span> }</pre></div></div><p class="text-xs text-neutral-600 mt-2">⚠ Los intentos fallidos se registran en auditoría automáticamente.</p></div>
-    </div>
-</section>
-
-<!-- API PRODUCTOS -->
-<section id="api-productos" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="package" class="w-6 h-6 text-[#00ffc4]"></i>Productos</h3>
-    <div class="space-y-6">
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-get">GET</span><code class="font-mono text-sm text-neutral-300">/api/productos</code></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>[{
-  <span class="prop">"id_producto"</span>: <span class="num">1</span>,
-  <span class="prop">"nombre"</span>: <span class="str">"Laptop Dell XPS 15"</span>,
-  <span class="prop">"precio_base"</span>: <span class="num">1200.00</span>,
-  <span class="prop">"estado"</span>: <span class="str">"activo"</span>,
-  <span class="prop">"stock_total"</span>: <span class="num">25</span>
-}]</pre></div></div></div>
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/producto</code></div><div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">cURL</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="fn">curl</span> -X POST http://localhost:3000/api/producto \
-  -H <span class="str">"Authorization: Bearer tu_token"</span> \
-  -H <span class="str">"Content-Type: application/json"</span> \
-  -d <span class="str">'{"nombre": "Monitor LG 27", "precio": 450.00,
-     "id_categoria": 3, "id_marca": 12}'</span></pre></div></div></div>
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-put">PUT</span><code class="font-mono text-sm text-neutral-300">/api/productos/:id</code></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{ <span class="prop">"nombre"</span>: <span class="str">"Laptop Dell XPS 15 - Updated"</span>, <span class="prop">"precio"</span>: <span class="num">1300.00</span> }</pre></div></div></div>
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-delete">DELETE</span><code class="font-mono text-sm text-neutral-300">/api/productos/:id</code></div><p class="text-sm text-neutral-500">Eliminación suave (soft delete). El producto no se borra físicamente.</p></div>
-    </div>
-</section>
-
-<!-- API INVENTARIO -->
-<section id="api-inventario" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="warehouse" class="w-6 h-6 text-[#00ffc4]"></i>Inventario</h3>
-    <div class="space-y-6">
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-get">GET</span><code class="font-mono text-sm text-neutral-300">/api/inventario</code></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>[{
-  <span class="prop">"sku"</span>: <span class="str">"LAP-DELL-XPS-M"</span>,
-  <span class="prop">"cantidad_disponible"</span>: <span class="num">15</span>,
-  <span class="prop">"stock_minimo"</span>: <span class="num">5</span>,
-  <span class="prop">"ubicacion"</span>: <span class="str">"Estante A-12"</span>
-}]</pre></div></div></div>
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/inventario</code></div><p class="text-sm text-neutral-400 mb-4">Registra un movimiento de inventario.</p><div class="mb-4"><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold mb-2">Tipos de movimiento</p><div class="flex flex-wrap gap-2"><span class="badge badge-green">entrada</span><span class="badge badge-red">salida</span><span class="badge badge-yellow">ajuste</span><span class="badge badge-blue">devolución</span></div></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"id_variante"</span>: <span class="num">5</span>,
-  <span class="prop">"cantidad"</span>: <span class="num">20</span>,
-  <span class="prop">"tipo_movimiento"</span>: <span class="str">"entrada"</span>,
-  <span class="prop">"observaciones"</span>: <span class="str">"Compra a proveedor"</span>
-}</pre></div></div></div>
-    </div>
-</section>
-
-<!-- API VENTAS -->
-<section id="api-ventas" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="shopping-cart" class="w-6 h-6 text-[#00ffc4]"></i>Ventas</h3>
-    <div class="api-card p-6 mb-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/ventas</code></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"id_cliente"</span>: <span class="num">5</span>,
-  <span class="prop">"items"</span>: [
-    { <span class="prop">"id_variante"</span>: <span class="num">1</span>, <span class="prop">"cantidad"</span>: <span class="num">2</span>, <span class="prop">"precio_unitario"</span>: <span class="num">1200.00</span> },
-    { <span class="prop">"id_variante"</span>: <span class="num">3</span>, <span class="prop">"cantidad"</span>: <span class="num">1</span>, <span class="prop">"precio_unitario"</span>: <span class="num">450.00</span> }
-  ],
-  <span class="prop">"canal_venta"</span>: <span class="str">"web"</span>
-}</pre></div></div><div class="mt-4 flex flex-wrap gap-2"><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold self-center mr-2">Estados:</p><span class="badge badge-yellow">pendiente</span><span class="badge badge-blue">pagada</span><span class="badge badge-green">completada</span><span class="badge badge-red">cancelada</span></div></div>
-    <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-get">GET</span><code class="font-mono text-sm text-neutral-300">/api/ventas?inicio=2026-05-01&fin=2026-05-31</code></div><p class="text-sm text-neutral-400">Query params: <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">inicio</code>, <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">fin</code>, <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">estado</code></p></div>
-</section>
-
-<!-- API ALERTAS -->
-<section id="api-alertas" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="bell" class="w-6 h-6 text-[#00ffc4]"></i>Alertas</h3>
-    <div class="space-y-6">
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-get">GET</span><code class="font-mono text-sm text-neutral-300">/api/alertas</code></div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>[{
-  <span class="prop">"producto"</span>: <span class="str">"Laptop Dell XPS (M - Plata)"</span>,
-  <span class="prop">"tipo_evento"</span>: <span class="str">"Stock Bajo"</span>,
-  <span class="prop">"valor_actual"</span>: <span class="num">3</span>,
-  <span class="prop">"estado"</span>: <span class="str">"⚠️ Crítico"</span>
-}]</pre></div></div></div>
-        <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/alertas/analizar-ia</code></div><p class="text-sm text-neutral-400 mb-4">Dispara el <strong class="text-white">agente Gemini</strong> para analizar todas las alertas activas y generar recomendaciones.</p><div class="p-4 rounded-xl bg-[#00ffc4]/5 border border-[#00ffc4]/10"><p class="text-sm text-[#00ffc4]">🔄 Flujo: Obtener alertas → Enviar contexto a Gemini → Recibir recomendaciones → Registrar en auditoría</p></div></div>
-    </div>
-</section>
-
-<!-- API IA -->
-<section id="api-ia" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="brain" class="w-6 h-6 text-[#00ffc4]"></i>IA Gemini</h3>
-    <div class="api-card p-6"><div class="flex items-center gap-3 mb-4"><span class="endpoint-method method-post">POST</span><code class="font-mono text-sm text-neutral-300">/api/ia/analizar-ia</code></div><p class="text-sm text-neutral-400 mb-4">Envía contexto de inventario para obtener análisis inteligente del agente Gemini.</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"context"</span>: {
-    <span class="prop">"producto"</span>: <span class="str">"Laptop Dell XPS"</span>,
-    <span class="prop">"stock_actual"</span>: <span class="num">3</span>,
-    <span class="prop">"stock_minimo"</span>: <span class="num">20</span>,
-    <span class="prop">"cantidad_vendida_mes"</span>: <span class="num">15</span>,
-    <span class="prop">"proveedor"</span>: <span class="str">"Dell Inc"</span>
-  }
-}</pre></div></div><div class="mt-4"><p class="text-xs uppercase tracking-wider text-neutral-500 font-bold mb-2">Response</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"analisis"</span>: <span class="str">"El stock está crítico (3 uds vs mínimo 20).
-Se recomienda pedido URGENTE a Dell Inc."</span>
-}</pre></div></div></div></div>
-</section>
-
-<!-- API OTROS -->
-<section id="api-otros" class="mb-20">
-    <h3 class="text-2xl font-semibold tracking-tight mb-8 flex items-center gap-3"><i data-lucide="more-horizontal" class="w-6 h-6 text-[#00ffc4]"></i>Otros Endpoints</h3>
-    <div class="grid sm:grid-cols-2 gap-4">
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/dashboard</code></div><p class="text-sm text-neutral-500">Métricas: ventas del día, alertas, usuarios.</p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/auditoria</code></div><p class="text-sm text-neutral-500">Params: <code class="text-white">limit</code>, <code class="text-white">offset</code>, <code class="text-white">usuario</code></p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/clientes</code></div><p class="text-sm text-neutral-500">Lista de clientes con compras totales.</p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-post">POST</span><code class="font-mono text-xs text-neutral-300">/api/clientes</code></div><p class="text-sm text-neutral-500">Crear nuevo cliente.</p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/reportes</code></div><p class="text-sm text-neutral-500">Params: <code class="text-white">tipo</code>, <code class="text-white">mes</code>, <code class="text-white">año</code></p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/reporteInventario</code></div><p class="text-sm text-neutral-500">Reporte detallado de inventario.</p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/usuarios</code></div><p class="text-sm text-neutral-500">Lista de usuarios con rol y estado.</p></div>
-        <div class="api-card p-5"><div class="flex items-center gap-2 mb-2"><span class="endpoint-method method-get">GET</span><code class="font-mono text-xs text-neutral-300">/api/categorias</code></div><p class="text-sm text-neutral-500">Gestión de categorías de productos.</p></div>
-    </div>
-</section>
-
-<!-- ARQUITECTURA -->
-<section id="arquitectura" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="building-2" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Arquitectura del Sistema</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Diseño modular con API REST, agente IA y bot Telegram.</p>
-    <div class="arch-box font-mono text-xs text-neutral-400 leading-relaxed"><pre class="text-center whitespace-pre"><span class="text-white">┌──────────────────────────────────────────────────┐</span>
-<span class="text-white">│</span>  <span class="text-[#00ffc4]">FRONTEND</span> (HTML / CSS / JS — Bootstrap 5)       <span class="text-white">│</span>
-<span class="text-white">└────────────────────┬─────────────────────────────┘</span>
-                     │ <span class="text-neutral-600">HTTPS / JSON</span>
-<span class="text-white">┌────────────────────▼─────────────────────────────┐</span>
-<span class="text-white">│</span>  <span class="text-[#00ffc4]">EXPRESS.JS SERVER</span> (Port 3000)                  <span class="text-white">│</span>
-<span class="text-white">│</span>  <span class="text-[#a855f7]">MIDDLEWARE</span> → <span class="text-[#60a5fa]">API ROUTES</span> → <span class="text-[#facc15]">TELEGRAM BOT</span>   <span class="text-white">│</span>
-<span class="text-white">└──────┬─────────────────┬──────────────────┬──────┘</span>
-       │                 │                  │
-<span class="text-white">┌──────▼─────────────────▼──────────────────▼──────┐</span>
-<span class="text-white">│</span>              <span class="text-[#facc15]">GOOGLE GEMINI AI</span>                    <span class="text-white">│</span>
-<span class="text-white">│</span>  <span class="text-[#00ffc4]">Agente Automatización</span>  <span class="text-[#60a5fa]">Chatbot Telegram</span>   <span class="text-white">│</span>
-<span class="text-white">└────────────────────────┬─────────────────────────┘</span>
-                         │
-<span class="text-white">┌────────────────────────▼─────────────────────────┐</span>
-<span class="text-white">│</span>  <span class="text-[#60a5fa]">MYSQL DATABASE</span> (Aiven Cloud)                  <span class="text-white">│</span>
-<span class="text-white">└──────────────────────────────────────────────────┘</span></pre></div>
-    <div class="mt-10"><h3 class="text-xl font-semibold mb-6">Modelo de Datos</h3><div class="code-block"><div class="code-header"><span class="text-xs text-neutral-500">SQL Schema (resumen)</span><button class="copy-btn text-xs text-neutral-500 hover:text-white flex items-center gap-1" onclick="copyCode(this)"><i data-lucide="copy" class="w-3 h-3"></i>Copiar</button></div><div class="code-content font-mono text-sm text-neutral-300"><pre><span class="kw">CREATE TABLE</span> usuarios (
-  id_usuario <span class="fn">INT</span> <span class="kw">PRIMARY KEY AUTO_INCREMENT</span>,
-  nombre <span class="fn">VARCHAR</span>(<span class="num">100</span>), correo <span class="fn">VARCHAR</span>(<span class="num">100</span>) <span class="kw">UNIQUE</span>,
-  password_hash <span class="fn">VARCHAR</span>(<span class="num">255</span>),
-  rol <span class="fn">ENUM</span>(<span class="str">'admin'</span>,<span class="str">'gerente'</span>,<span class="str">'vendedor'</span>,<span class="str">'almacen'</span>),
-  estado <span class="fn">ENUM</span>(<span class="str">'activo'</span>,<span class="str">'inactivo'</span>,<span class="str">'suspendido'</span>)
-);
-<span class="kw">CREATE TABLE</span> productos (
-  id_producto <span class="fn">INT</span> <span class="kw">PRIMARY KEY AUTO_INCREMENT</span>,
-  nombre <span class="fn">VARCHAR</span>(<span class="num">150</span>), precio_base <span class="fn">DECIMAL</span>(<span class="num">10,2</span>),
-  estado <span class="fn">ENUM</span>(<span class="str">'activo'</span>,<span class="str">'inactivo'</span>,<span class="str">'descontinuado'</span>)
-);
-<span class="kw">CREATE TABLE</span> inventario (
-  id_inventario <span class="fn">INT</span> <span class="kw">PRIMARY KEY AUTO_INCREMENT</span>,
-  id_variante <span class="fn">INT</span>, cantidad_disponible <span class="fn">INT</span> <span class="kw">DEFAULT</span> <span class="num">0</span>,
-  stock_minimo <span class="fn">INT</span>, stock_maximo <span class="fn">INT</span>
-);
-<span class="kw">CREATE TABLE</span> ordenes_venta (
-  id_orden_venta <span class="fn">INT</span> <span class="kw">PRIMARY KEY AUTO_INCREMENT</span>,
-  numero_orden <span class="fn">VARCHAR</span>(<span class="num">50</span>) <span class="kw">UNIQUE</span>,
-  total <span class="fn">DECIMAL</span>(<span class="num">10,2</span>),
-  estado <span class="fn">ENUM</span>(<span class="str">'pendiente'</span>,<span class="str">'pagada'</span>,<span class="str">'completada'</span>,<span class="str">'cancelada'</span>)
-);
-<span class="kw">CREATE TABLE</span> auditoria (
-  id_auditoria <span class="fn">INT</span> <span class="kw">PRIMARY KEY AUTO_INCREMENT</span>,
-  id_usuario <span class="fn">INT</span>, accion <span class="fn">VARCHAR</span>(<span class="num">100</span>),
-  modulo <span class="fn">VARCHAR</span>(<span class="num">50</span>),
-  datos_anteriores <span class="fn">JSON</span>, datos_nuevos <span class="fn">JSON</span>,
-  fecha <span class="fn">TIMESTAMP</span> <span class="kw">DEFAULT CURRENT_TIMESTAMP</span>
-);</pre></div></div></div>
-</section>
-
-<!-- AGENTE GEMINI -->
-<section id="gemini-agent" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#facc15]/10 flex items-center justify-center"><i data-lucide="brain-circuit" class="w-4 h-4 text-[#facc15]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Agente de Automatización Gemini</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">El cerebro inteligente que supervisa y analiza el inventario.</p>
-    <div class="section-card mb-8"><h3 class="font-semibold mb-4">¿Qué hace el agente?</h3><p class="text-sm text-neutral-400 mb-6">El agente Gemini es un servicio de IA integrado en el backend que <strong class="text-white">recibe contexto completo del negocio</strong>, lo procesa con Gemini y devuelve recomendaciones accionables.</p><div class="grid sm:grid-cols-2 gap-4">
-        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="text-[#00ffc4] text-lg mb-2">📊</div><h4 class="font-medium text-sm mb-1">Análisis de Alertas</h4><p class="text-xs text-neutral-500">Genera diagnóstico con prioridades de todas las alertas activas.</p></div>
-        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="text-[#00ffc4] text-lg mb-2">💡</div><h4 class="font-medium text-sm mb-1">Recomendaciones de Compra</h4><p class="text-xs text-neutral-500">Sugiere qué pedir, a qué proveedor y con qué urgencia.</p></div>
-        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="text-[#00ffc4] text-lg mb-2">📈</div><h4 class="font-medium text-sm mb-1">Predicción de Demanda</h4><p class="text-xs text-neutral-500">Analiza tendencias de venta para predecir necesidades futuras.</p></div>
-        <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="text-[#00ffc4] text-lg mb-2">🔍</div><h4 class="font-medium text-sm mb-1">Diagnóstico de Estado</h4><p class="text-xs text-neutral-500">Detecta anomalías o patrones inusuales en el inventario.</p></div>
-    </div></div>
-    <div class="section-card mb-8"><h3 class="font-semibold mb-4">Flujo del Agente</h3><div class="space-y-4">
-        <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-full bg-[#00ffc4]/10 border border-[#00ffc4]/20 flex items-center justify-center shrink-0 text-sm font-bold text-[#00ffc4]">1</div><div><h4 class="font-medium text-sm mb-1">Disparador</h4><p class="text-sm text-neutral-500">Vía <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">POST /api/alertas/analizar-ia</code> o <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">POST /api/ia/analizar-ia</code></p></div></div>
-        <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-full bg-[#00ffc4]/10 border border-[#00ffc4]/20 flex items-center justify-center shrink-0 text-sm font-bold text-[#00ffc4]">2</div><div><h4 class="font-medium text-sm mb-1">Recopilación de Contexto</h4><p class="text-sm text-neutral-500">Backend consulta la BD: alertas, stock, ventas recientes.</p></div></div>
-        <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-full bg-[#facc15]/10 border border-[#facc15]/20 flex items-center justify-center shrink-0 text-sm font-bold text-[#facc15]">3</div><div><h4 class="font-medium text-sm mb-1">Procesamiento con Gemini</h4><p class="text-sm text-neutral-500">Prompt estructurado enviado a Google Generative AI.</p></div></div>
-        <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-full bg-[#facc15]/10 border border-[#facc15]/20 flex items-center justify-center shrink-0 text-sm font-bold text-[#facc15]">4</div><div><h4 class="font-medium text-sm mb-1">Respuesta Inteligente</h4><p class="text-sm text-neutral-500">Análisis estructurado con recomendaciones priorizadas.</p></div></div>
-        <div class="flex items-start gap-4"><div class="w-10 h-10 rounded-full bg-[#00ffc4]/10 border border-[#00ffc4]/20 flex items-center justify-center shrink-0 text-sm font-bold text-[#00ffc4]">5</div><div><h4 class="font-medium text-sm mb-1">Registro en Auditoría</h4><p class="text-sm text-neutral-500">Toda interacción queda registrada para trazabilidad.</p></div></div>
-    </div></div>
-    <div class="section-card"><h3 class="font-semibold mb-4">Ejemplo de Salida del Agente</h3><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>{
-  <span class="prop">"ok"</span>: <span class="num">true</span>,
-  <span class="prop">"total_alertas"</span>: <span class="num">5</span>,
-  <span class="prop">"analisis"</span>: <span class="str">"DIAGNÓSTICO DEL INVENTARIO:
-
-🔴 CRÍTICAS (2):
-• Laptop Dell XPS — 3 uds (mín: 20) — Pedir URGENTE
-• Cables USB-C — 0 uds (mín: 15) — AGOTADO
-
-🟡 ADVERTENCIAS (3):
-• Monitores LG — 8 uds (mín: 10) — Reposición próxima
-• Teclados Mecánicos — 12 uds (mín: 15)
-• Mouse Inalámbrico — 18 uds (mín: 20)
-
-RECOMENDACIONES:
-1. Priorizar pedido a Dell Inc — plazo 5-7 días
-2. Contactar proveedor cables USB-C entrega express
-3. Periféricos pueden agruparse en un pedido semanal"</span>
-}</pre></div></div></div>
-</section>
-
-<!-- TELEGRAM BOT -->
-<section id="telegram" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="send" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Chatbot de Telegram</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">OmniBot — Interfaz conversacional potenciada por Gemini.</p>
-    <div class="section-card mb-8"><h3 class="font-semibold mb-4">Cómo Funciona</h3><p class="text-sm text-neutral-400 mb-6">El bot corre como servicio background junto al servidor Express. Usa <strong class="text-white">polling cada 3 segundos</strong>. Cada mensaje se envía a <strong class="text-white">Google Gemini</strong> con contexto del inventario para respuestas inteligentes.</p><div class="grid sm:grid-cols-2 gap-3">
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02]"><span class="text-lg">📦</span><span class="text-sm text-neutral-300">Consultar stock</span></div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02]"><span class="text-lg">💰</span><span class="text-sm text-neutral-300">Ver ventas y métricas</span></div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02]"><span class="text-lg">🚨</span><span class="text-sm text-neutral-300">Recibir alertas de stock</span></div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02]"><span class="text-lg">🧠</span><span class="text-sm text-neutral-300">Preguntas en lenguaje natural</span></div>
-    </div></div>
-    <div class="section-card"><h3 class="font-semibold mb-4">Ejemplo de Conversación</h3><div class="space-y-4">
-        <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0"><i data-lucide="user" class="w-4 h-4 text-blue-400"></i></div><div class="bg-white/[0.03] rounded-2xl rounded-tl-sm px-4 py-3 text-sm text-neutral-300 max-w-md">¿Cuánto stock de laptops hay?</div></div>
-        <div class="flex gap-3 justify-end"><div class="bg-[#00ffc4]/5 border border-[#00ffc4]/10 rounded-2xl rounded-tr-sm px-4 py-3 text-sm text-neutral-200 max-w-md">Hay <strong class="text-white">15 laptops Dell</strong> disponibles. ⚠️ Stock bajo (mín: 20), se recomienda reposición.</div><div class="w-8 h-8 rounded-full bg-[#00ffc4]/10 flex items-center justify-center shrink-0"><i data-lucide="bot" class="w-4 h-4 text-[#00ffc4]"></i></div></div>
-        <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0"><i data-lucide="user" class="w-4 h-4 text-blue-400"></i></div><div class="bg-white/[0.03] rounded-2xl rounded-tl-sm px-4 py-3 text-sm text-neutral-300 max-w-md">¿Hay alertas activas?</div></div>
-        <div class="flex gap-3 justify-end"><div class="bg-[#00ffc4]/5 border border-[#00ffc4]/10 rounded-2xl rounded-tr-sm px-4 py-3 text-sm text-neutral-200 max-w-md">2 alertas:<br>• 🔴 <strong class="text-white">Stock agotado:</strong> Cables USB-C<br>• ⚠️ <strong class="text-white">Stock bajo:</strong> Monitores LG (8 uds)</div><div class="w-8 h-8 rounded-full bg-[#00ffc4]/10 flex items-center justify-center shrink-0"><i data-lucide="bot" class="w-4 h-4 text-[#00ffc4]"></i></div></div>
-        <div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0"><i data-lucide="user" class="w-4 h-4 text-blue-400"></i></div><div class="bg-white/[0.03] rounded-2xl rounded-tl-sm px-4 py-3 text-sm text-neutral-300 max-w-md">Analiza la situación general</div></div>
-        <div class="flex gap-3 justify-end"><div class="bg-[#00ffc4]/5 border border-[#00ffc4]/10 rounded-2xl rounded-tr-sm px-4 py-3 text-sm text-neutral-200 max-w-md">El inventario presenta 2 problemas críticos. Recomiendo pedido urgente de cables USB-C y reposición de monitores esta semana.</div><div class="w-8 h-8 rounded-full bg-[#00ffc4]/10 flex items-center justify-center shrink-0"><i data-lucide="bot" class="w-4 h-4 text-[#00ffc4]"></i></div></div>
-    </div></div>
-</section>
-
-<!-- SEGURIDAD -->
-<section id="seguridad" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="shield" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Seguridad</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Medidas de protección implementadas.</p>
-    <div class="grid sm:grid-cols-3 gap-4">
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#00ffc4]/10 flex items-center justify-center mb-4"><i data-lucide="key-round" class="w-5 h-5 text-[#00ffc4]"></i></div><h4 class="font-semibold text-sm mb-2">Autenticación JWT</h4><p class="text-xs text-neutral-500">Tokens con expiración de 8 horas y hashing seguro de contraseñas.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#facc15]/10 flex items-center justify-center mb-4"><i data-lucide="shield-check" class="w-5 h-5 text-[#facc15]"></i></div><h4 class="font-semibold text-sm mb-2">Protección de Datos</h4><p class="text-xs text-neutral-500">CORS, prevención SQL Injection, HTTPS en producción.</p></div>
-        <div class="feature-card"><div class="w-10 h-10 rounded-xl bg-[#a855f7]/10 flex items-center justify-center mb-4"><i data-lucide="eye" class="w-5 h-5 text-[#a855f7]"></i></div><h4 class="font-semibold text-sm mb-2">Variables Seguras</h4><p class="text-xs text-neutral-500">Credenciales y keys en variables de entorno, nunca en el código.</p></div>
-    </div>
-</section>
-
-<!-- AUDITORÍA -->
-<section id="auditoria" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="file-text" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Sistema de Auditoría</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Registro automático de todas las operaciones.</p>
-    <div class="section-card"><div class="grid sm:grid-cols-2 gap-3 mb-6">
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">✅ Inicios de sesión exitosos</div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">❌ Intentos fallidos de login</div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">📝 Creación/edición de productos</div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">📦 Movimientos de inventario</div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">💳 Órdenes de venta</div>
-        <div class="flex items-center gap-3 p-3 rounded-lg bg-white/[0.02] text-sm text-neutral-300">🧠 Interacciones con agente IA</div>
-    </div><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre>[{
-  <span class="prop">"fecha"</span>: <span class="str">"2026-05-13T16:34:49Z"</span>,
-  <span class="prop">"usuario"</span>: <span class="str">"admin"</span>,
-  <span class="prop">"accion"</span>: <span class="str">"Entrada de stock"</span>,
-  <span class="prop">"modulo"</span>: <span class="str">"inventario"</span>,
-  <span class="prop">"detalles"</span>: <span class="str">"SKU-001 (M - Rojo): 50 unidades"</span>,
-  <span class="prop">"estado"</span>: <span class="str">"exitoso"</span>
-},{
-  <span class="prop">"fecha"</span>: <span class="str">"2026-05-13T16:30:12Z"</span>,
-  <span class="prop">"usuario"</span>: <span class="str">"sistema"</span>,
-  <span class="prop">"accion"</span>: <span class="str">"Análisis IA"</span>,
-  <span class="prop">"modulo"</span>: <span class="str">"agente_gemini"</span>,
-  <span class="prop">"detalles"</span>: <span class="str">"Análisis de 5 alertas activas"</span>,
-  <span class="prop">"estado"</span>: <span class="str">"exitoso"</span>
-}]</pre></div></div></div>
-</section>
-
-<!-- DEPLOY -->
-<section id="deploy" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="rocket" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Despliegue en Railway</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Publica OmniSynch en la nube en minutos.</p>
-    <div class="space-y-6">
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">1</div><h3 class="text-lg font-semibold">Conectar Repositorio</h3></div><p class="text-sm text-neutral-400 ml-11">Ve a <a href="https://railway.app" class="text-[#00ffc4] hover:underline" target="_blank">Railway.app</a>, conecta GitHub e importa <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">DevilDantes/OmniS</code>.</p></div>
-        <div class="section-card"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">2</div><h3 class="text-lg font-semibold">Configurar Variables</h3></div><p class="text-sm text-neutral-400 ml-11 mb-4">Agrega todas las variables del <code class="font-mono text-[#00ffc4]">.env</code> en Railway. Mínimo obligatorio:</p><div class="code-block"><div class="code-content font-mono text-sm text-neutral-300 !p-4"><pre><span class="prop">DB_HOST</span>=<span class="str">tu_host</span>
-<span class="prop">DB_USER</span>=<span class="str">tu_usuario</span>
-<span class="prop">DB_PASSWORD</span>=<span class="str">tu_password</span>
-<span class="prop">DB_NAME</span>=<span class="str">omnisynch_inventory</span>
-<span class="prop">DB_PORT</span>=<span class="num">17166</span>
-<span class="prop">TELEGRAM_BOT_TOKEN</span>=<span class="str">token</span>
-<span class="prop">GEMINI_API_KEY</span>=<span class="str">api_key</span>
-<span class="prop">JWT_SECRET</span>=<span class="str">clave_secreta</span>
-<span class="prop">NODE_ENV</span>=<span class="str">production</span></pre></div></div></div>
-        <div class="section-card glow-green"><div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 rounded-full bg-[#00ffc4] text-black flex items-center justify-center text-sm font-bold">3</div><h3 class="text-lg font-semibold">Deploy Automático</h3></div><p class="text-sm text-neutral-400 ml-11 mb-4">Railway detecta <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">package.json</code> y despliega automáticamente. Cada push a <code class="font-mono text-white bg-white/5 px-1.5 py-0.5 rounded">main</code> activa deploy.</p><div class="ml-11 p-4 rounded-xl bg-green-500/5 border border-green-500/10"><p class="text-sm text-green-400">🚀 URL: <code class="font-mono">https://omnis-production-xxx.up.railway.app</code></p></div></div>
-    </div>
-</section>
-
-<!-- ROADMAP -->
-<section id="roadmap" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="map" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Roadmap Futuro</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Funcionalidades planificadas.</p>
-    <div class="section-card"><div class="space-y-4">
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Aplicación móvil nativa (React Native)</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Panel avanzado de BI (Power BI integration)</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Predicciones de demanda con Machine Learning</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Integración con más proveedores vía API</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Soporte multiidioma</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Sistema de permisos granular avanzado</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Sincronización en tiempo real (WebSockets)</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Módulo de Recursos Humanos</span></label>
-        <label class="flex items-start gap-4 cursor-pointer group"><input type="checkbox" class="mt-1 accent-[#00ffc4]" disabled><span class="text-sm text-neutral-300 group-hover:text-white transition-colors">Sistema de Facturación Electrónica</span></label>
-    </div></div>
-</section>
-
-<!-- TROUBLESHOOTING -->
-<section id="troubleshooting" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="wrench" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Troubleshooting</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Solución a problemas comunes.</p>
-    <div class="space-y-4">
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-red text-[10px]">Error</span><code class="font-mono text-sm text-white">Cannot find module 'express'</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Ejecuta <code class="font-mono text-[#00ffc4] bg-[#00ffc4]/5 px-1.5 py-0.5 rounded">npm install</code> en la raíz del proyecto.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-red text-[10px]">Error</span><code class="font-mono text-sm text-white">ECONNREFUSED 127.0.0.1:3000</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Puerto 3000 en uso. Cambia <code class="font-mono text-[#00ffc4]">PORT=3001</code> en <code class="font-mono text-white">.env</code>.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-red text-[10px]">Error</span><code class="font-mono text-sm text-white">Access denied for user</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Verifica credenciales en <code class="font-mono text-white">.env</code> y que MySQL esté corriendo.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-yellow text-[10px]">Error</span><code class="font-mono text-sm text-white">Telegram bot not responding</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Verifica <code class="font-mono text-white">TELEGRAM_BOT_TOKEN</code> en <code class="font-mono text-white">.env</code>. Revisa logs del servidor.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-yellow text-[10px]">Error</span><code class="font-mono text-sm text-white">GEMINI_API_KEY is required</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Verifica API key válida en <code class="font-mono text-white">.env</code>. Confirma cuota en <a href="https://aistudio.google.com/app/apikey" class="text-[#00ffc4] hover:underline" target="_blank">Google AI Studio</a>.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-red text-[10px]">Error</span><code class="font-mono text-sm text-white">ER_ACCESS_DENIED_ERROR (SSL)</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> Asegúrate de tener <code class="font-mono text-[#00ffc4]">ssl: { rejectUnauthorized: false }</code> en <code class="font-mono text-white">db.js</code> para Aiven Cloud.</p></div>
-        <div class="section-card !p-6"><div class="flex items-center gap-2 mb-3"><span class="badge badge-yellow text-[10px]">Error</span><code class="font-mono text-sm text-white">Bot responde vacío o con error</code></div><p class="text-sm text-neutral-400"><strong class="text-white">Solución:</strong> El prompt puede ser demasiado largo. Revisa logs para el error exacto de Gemini. Reduce el contexto si es necesario.</p></div>
-    </div>
-</section>
-
-<!-- EQUIPO -->
-<section id="equipo" class="mb-20">
-    <div class="flex items-center gap-3 mb-2"><div class="w-8 h-8 rounded-lg bg-[#00ffc4]/10 flex items-center justify-center"><i data-lucide="users" class="w-4 h-4 text-[#00ffc4]"></i></div><h2 class="text-3xl sm:text-4xl font-semibold tracking-tight">Equipo de Desarrollo</h2></div>
-    <p class="text-neutral-500 mb-10 ml-11">Proyecto de aula — Unitecnar.</p>
-    <div class="section-card"><div class="grid sm:grid-cols-2 gap-4">
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#00ffc4]/20 to-[#047857]/20 flex items-center justify-center text-lg font-bold text-[#00ffc4] shrink-0">JP</div><div><h4 class="font-semibold text-sm">Juan David Pedraza Valencia</h4><p class="text-xs text-neutral-500">Desarrollo Backend & IA</p></div></div>
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#60a5fa]/20 to-[#3b82f6]/20 flex items-center justify-center text-lg font-bold text-[#60a5fa] shrink-0">KT</div><div><h4 class="font-semibold text-sm">Kener Safat Theran Revolledo</h4><p class="text-xs text-neutral-500">Desarrollo Backend</p></div></div>
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#a855f7]/20 to-[#7c3aed]/20 flex items-center justify-center text-lg font-bold text-[#a855f7] shrink-0">SP</div><div><h4 class="font-semibold text-sm">Sebastian Perea Carballo</h4><p class="text-xs text-neutral-500">Desarrollo Frontend</p></div></div>
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#facc15]/20 to-[#eab308]/20 flex items-center justify-center text-lg font-bold text-[#facc15] shrink-0">FP</div><div><h4 class="font-semibold text-sm">Fabian Andrés Pérez Melendez</h4><p class="text-xs text-neutral-500">Desarrollo Frontend</p></div></div>
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#f87171]/20 to-[#ef4444]/20 flex items-center justify-center text-lg font-bold text-[#f87171] shrink-0">JS</div><div><h4 class="font-semibold text-sm">Jesús Javier Sánchez Vanegas</h4><p class="text-xs text-neutral-500">Base de Datos</p></div></div>
-        <div class="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5"><div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#00ffc4]/20 to-[#047857]/20 flex items-center justify-center text-lg font-bold text-[#00ffc4] shrink-0">DA</div><div><h4 class="font-semibold text-sm">Douglas Josué Araujo Méndez</h4><p class="text-xs text-neutral-500">Integración & Despliegue</p></div></div>
-    </div><div class="mt-8 pt-6 border-t border-white/5 flex flex-wrap gap-4 text-sm text-neutral-500"><div class="flex items-center gap-2"><i data-lucide="school" class="w-4 h-4"></i><span>Unidad Tecnológica de Bolívar (Unitecnar)</span></div><div class="flex items-center gap-2"><i data-lucide="calendar" class="w-4 h-4"></i><span>2026</span></div><div class="flex items-center gap-2"><i data-lucide="scale" class="w-4 h-4"></i><span>Licencia ISC</span></div></div></div>
-</section>
-
-<!-- FOOTER -->
-<footer class="border-t border-white/5 py-12 mt-10">
-    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg bg-[#00ffc4] flex items-center justify-center"><i data-lucide="box" class="w-4 h-4 text-black"></i></div><div><span class="text-sm font-semibold">OmniSynch</span><p class="text-xs text-neutral-600">Sistema ERP de Gestión de Inventario</p></div></div>
-        <div class="flex items-center gap-4 text-sm text-neutral-500">
-            <a href="https://github.com/DevilDantes/OmniS" target="_blank" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="github" class="w-4 h-4"></i>GitHub</a>
-            <span class="text-neutral-700">•</span>
-            <a href="mailto:servifriobolivar@gmail.com" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="mail" class="w-4 h-4"></i>Contacto</a>
-        </div>
-        <p class="text-xs text-neutral-600">Última actualización: Mayo 2026</p>
-    </div>
-    <div class="mt-8 text-center"><p class="text-xs text-neutral-700">⭐ Si este proyecto te fue útil, dale una estrella en GitHub</p></div>
-</footer>
-
-</div>
-</main>
-</div>
-
-<script>
-lucide.createIcons();
-function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open');document.getElementById('sidebarOverlay').classList.toggle('open')}
-function switchTab(e,id){const p=e.target.closest('.section-card')||e.target.closest('section');if(!p)return;p.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));p.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));e.target.classList.add('active');const t=document.getElementById(id);if(t)t.classList.add('active')}
-function copyCode(btn){const b=btn.closest('.code-block');const c=b.querySelector('.code-content pre')||b.querySelector('.code-content');navigator.clipboard.writeText(c.innerText).then(()=>{const o=btn.innerHTML;btn.innerHTML='<i data-lucide="check" class="w-3 h-3"></i> Copiado';btn.style.opacity='1';btn.style.color='#00ffc4';lucide.createIcons();setTimeout(()=>{btn.innerHTML=o;btn.style.color='';lucide.createIcons()},2000)})}
-function filterSidebar(q){const l=document.querySelectorAll('.sidebar-link');const s=q.toLowerCase().trim();l.forEach(a=>{a.style.display=(!s||a.textContent.toLowerCase().includes(s))?'':'none'})}
-const sections=document.querySelectorAll('section[id]');const sidebarLinks=document.querySelectorAll('.sidebar-link[data-section]');
-function updateActiveLink(){let c='';sections.forEach(s=>{if(s.getBoundingClientRect().top<=120)c=s.getAttribute('id')});sidebarLinks.forEach(l=>{l.classList.remove('active');if(l.getAttribute('data-section')===c)l.classList.add('active')})}
-sidebarLinks.forEach(l=>l.addEventListener('click',()=>{if(window.innerWidth<1024){document.getElementById('sidebar').classList.remove('open');document.getElementById('sidebarOverlay').classList.remove('open')}}));
-let t=false;window.addEventListener('scroll',()=>{if(!t){window.requestAnimationFrame(()=>{updateActiveLink();t=false});t=true}});updateActiveLink();
-</script>
 </body>
 </html>
